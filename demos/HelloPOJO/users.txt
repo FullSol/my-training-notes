@@ -1,0 +1,1 @@
+User [id=1, username=d, password=d, firstName=d, lastName=d, email=d]User [id=3, username=FullSol, password=SuperMario, firstName=Calvin, lastName=Raines, email=calvine.raines@gmail.com]
