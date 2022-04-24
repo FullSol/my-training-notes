@@ -1,5 +1,7 @@
 # Unix/Linux Questions
 
+> Note: Don't forget about this document. [Revature Study Guide](https://sites.google.com/revature.com/studyguide/java?authuser=0). The references in this document are from the internet through google searches. These provide additional references to the material below.
+
 ## What is the difference between Unix and Linux?
 Linux is open-source and free to use the operating system. It is used for computer hardware and software, game development, mainframes, etc. It can run various client programs.
 
