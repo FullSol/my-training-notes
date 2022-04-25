@@ -1,5 +1,7 @@
 # DS & A Questions
 
+> Note: Don't forget about this document. [Revature Study Guide](https://sites.google.com/revature.com/studyguide/java?authuser=0). The references in this document are from the internet through google searches. These provide additional references to the material below.
+
 ## What is a data structure? What is an algorithm?
 
 ## How would you make your own algorithm?
