@@ -1,6 +1,7 @@
 package com.revature;
 
 public class Saiyan {
+	
 	// Characteristics, aka fields
 	// Naming convention = camelCase (lower-case first word, capitalize all other words after.)
 	String name;
@@ -12,12 +13,12 @@ public class Saiyan {
 	// constructor = special method that is used for initializing the object
 	// By default, if we do not make our own constructor, Java gives a default constructor:
 	// public Saiyan(){super()}
-	
 	public Saiyan() {
 		super();
 	}
 	
 	public Saiyan(String name, String move, int powerLevel, int defenseLevel) {
+		
 		// this keyword = reference variable that refers to the current class instance
 		// ex. Saiyan goku = new Saiyan("Goku", "Spirit Bpmb", 100000, 500000)
 		this.name = name;
