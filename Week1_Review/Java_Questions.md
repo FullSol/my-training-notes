@@ -227,7 +227,17 @@ Plain Old Java Object
 
 ## What are the different variable scopes in Java? 
 
-## What are the access modifiers in Java? Explain them. 
+## What are the access modifiers in Java? Explain them.
+
+**Private**: We can access the private modifier only within the same class and not from outside the class.
+
+**Default**: We can access the default modifier only within the same package and not from outside the package. And also, if we do not specify any access modifier it will automatically consider it as default.
+
+**Protected**: We can access the protected modifier within the same package and also from outside the package with the help of the child class. If we do not make the child class, we cannot access it from outside the package. So inheritance is a must for accessing it from outside the package.
+
+**Public**: We can access the public modifier from anywhere. We can access public modifiers from within the class as well as from outside the class and also within the package and outside the package.
+
+[Great Learning: Access Modifiers in JAVA](https://www.mygreatlearning.com/blog/the-access-modifiers-in-java/) 
 
 ## What are the non##access modifiers in Java? 
 
@@ -281,106 +291,6 @@ In simple words, Literals in Java is a synthetic representation of boolean, nume
 ### Final
 ### .finalize()
 ### finally
-
-## What is an exception? What makes it different from an error?
-
-## Explain the difference between throw, throws, and Throwable 
-
-## Do you need a try block? 
-
-## Do you need a catch block? Can# Java Questions
-
-## What is Java? What are some of the features/benefits of Java and what do they mean?
-
-## What is JRE / JDK / JVM? 
-
-## What is the difference between an object and a class? 
-
-## What is the root class from which every class extends? 
-
-## What are the primitive data types in Java? 
-
-## Explain stack vs heap
-
-## Where are Strings stored in memory? 
-
-## Are variable references stored on the stack or heap? What about the objects they refer to? 
-
-## What is a stack trace? What kind of information do they tell you? 
-
-## What are annotations? 
-
-## What is a POJO?
-
-## Explain the POJO Design Pattern. 
-
-## What is garbage colleciton?
-
-## Can you force garbage collection in Java? When is an object eligible for GC? 
-
-## Why are strings immutable in java? How would you make your own objects immutable?
-
-## What is the difference between String, StringBuilder, and StringBuffer? 
-
-## What are the different variable scopes in Java? 
-
-## What are the access modifiers in Java? Explain them.
-
-**Private**: We can access the private modifier only within the same class and not from outside the class.
-
-**Default**: We can access the default modifier only within the same package and not from outside the package. And also, if we do not specify any access modifier it will automatically consider it as default.
-
-**Protected**: We can access the protected modifier within the same package and also from outside the package with the help of the child class. If we do not make the child class, we cannot access it from outside the package. So inheritance is a must for accessing it from outside the package.
-
-**Public**: We can access the public modifier from anywhere. We can access public modifiers from within the class as well as from outside the class and also within the package and outside the package.
-
-[Great Learning: Access Modifiers in JAVA](https://www.mygreatlearning.com/blog/the-access-modifiers-in-java/)
-
-## What are the non##access modifiers in Java? 
-
-## What is the difference between static and final variables? 
-
-## What are the default values for all data types in Java? 
-
-## What is a wrapper class? List them. 
-
-## What is autoboxing / unboxing? 
-
-## Is Java pass-by-value or pass-by-reference? 
-
-## How can you make a class immutable? 
-
-## If two objects are equal, do they have the same hashcode? If not equal? 
-
-## What is a conditional statement? What are the different types?
-
-## What data types are supported in switch statements? 
-
-## What is a method?
-
-## What is the difference between a package and an import in Java?
-
-## Can an import be static? Give an example of one. 
-
-## What methods are available in the Object class? 
-
-## What is the difference between == and .equals()? 
-
-## What is an enhanced for loop? 
-
-## What does the “super” keyword do? 
-
-## What is the first line of any constructor? 
-
-## What happens if you don’t define a constructor for a class? Can you still instantiate it? 
-
-## What is a literal value in Java?
-
-## What are operators? List some operators.
-
-## What is the compliation process that our Java code goes through?
-
-## What is the difference between final, .finalize(), and finally? 
 
 ## What is an exception? What makes it different from an error?
 
