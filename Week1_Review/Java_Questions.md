@@ -213,7 +213,7 @@ A stack trace is a list of the method calls that the application was in the midd
 ## What are annotations?
 
 ## What is a POJO?
-
+Plain Old Java Object
 
 ## Explain the POJO Design Pattern. 
 
@@ -268,12 +268,19 @@ A stack trace is a list of the method calls that the application was in the midd
 ## What happens if you don’t define a constructor for a class? Can you still instantiate it? 
 
 ## What is a literal value in Java?
+Any constant value which can be assigned to the variable is called literal/constant. 
+
+In simple words, Literals in Java is a synthetic representation of boolean, numeric, character, or string data. It is a medium of expressing particular values in the program, such as an integer variable named ‘’/count is assigned an integer value in the following statement.
 
 ## What are operators? List some operators.
 
 ## What is the compliation process that our Java code goes through?
 
-## What is the difference between final, .finalize(), and finally? 
+## What is the difference between final, .finalize(), and finally?
+
+### Final
+### .finalize()
+### finally
 
 ## What is an exception? What makes it different from an error?
 
@@ -317,7 +324,17 @@ A stack trace is a list of the method calls that the application was in the midd
 
 ## What are the different variable scopes in Java? 
 
-## What are the access modifiers in Java? Explain them. 
+## What are the access modifiers in Java? Explain them.
+
+**Private**: We can access the private modifier only within the same class and not from outside the class.
+
+**Default**: We can access the default modifier only within the same package and not from outside the package. And also, if we do not specify any access modifier it will automatically consider it as default.
+
+**Protected**: We can access the protected modifier within the same package and also from outside the package with the help of the child class. If we do not make the child class, we cannot access it from outside the package. So inheritance is a must for accessing it from outside the package.
+
+**Public**: We can access the public modifier from anywhere. We can access public modifiers from within the class as well as from outside the class and also within the package and outside the package.
+
+[Great Learning: Access Modifiers in JAVA](https://www.mygreatlearning.com/blog/the-access-modifiers-in-java/)
 
 ## What are the non##access modifiers in Java? 
 
@@ -381,13 +398,13 @@ A stack trace is a list of the method calls that the application was in the midd
 
 ## What is JUnit? 
 
-## What is TDD? 
+## What is TDD?
 
-## What are the annotations in JUnit? Order of execution? 
+## What are the annotations in JUnit? Order of execution?
 
 ## What are assertions?
 
-## Give an example of a test case 
+## Give an example of a test case
 
 ## How would you prevent a test from being run without commenting it out?
 
@@ -397,11 +414,27 @@ A stack trace is a list of the method calls that the application was in the midd
 
 ## What is the difference between a parameter and an argument?
 
-## What are collections in Java? 
+## What are collections in Java?
 
-## What are the interfaces in the Collections API? 
+## What are the interfaces in the Collections API?
 
-## What is the difference between an Array and an ArrayList? 
+## What is the difference between an Array and an ArrayList?
+An array is a basic functionality provided by Java, whereas ArrayList is a class of Java Collections framework. It belongs to java.util package.
+
+An array is a dynamically-created object. It serves as a container that holds the constant number of values of the same type. It has a contiguous memory location. Once an array is created, we cannot change its size. We can create an array by using the following statement:
+
+```
+int array[]=new int[size];
+```
+Java ArrayList class
+
+In Java, ArrayList is a class of Collections framework. It implements List<E>, Collection<E>, Iterable<E>, Cloneable, Serializable, and RandomAccess interfaces. It extends AbstractList<E> class
+
+We can create an instance of ArrayList by using the following statement:
+
+```
+ArrayList<Type> arrayList=new ArrayList<Type>();
+```
 
 ## Are Maps in the Collections API? What makes Map different from other interfaces? 
 
