@@ -21,7 +21,7 @@
 <hr>
 
 ### Want to contribute?
-Clone the repo and PLEASE make a nee branch
+Clone the repo and PLEASE make a new branch...
 
 ```
 git checkout -b my-updates-feature-branch
