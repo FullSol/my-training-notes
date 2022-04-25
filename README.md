@@ -19,6 +19,7 @@
 * [Unix & Linux Questions](https://github.com/FullSol/my-training-notes/blob/master/Week1_Review/Unix_Linux_Questions.md)
 
 <hr>
+
 ### Want to contribute?
 Clone the repo and PLEASE make a nee branch
 
