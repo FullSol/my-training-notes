@@ -82,6 +82,9 @@ Each Zone is engineered to be isolated from failures in other Availability Zones
 ![Fault Zones](./images/Zones.png)
 
 ## AWS RDS Setup Demo
+
+### Database Creation
+
 **Search RDS**
 **Click RDS**
 **Click Create DB**
@@ -112,6 +115,22 @@ Each Zone is engineered to be isolated from failures in other Availability Zones
 	* ers-security-group (or your custom security group)
 
 **Click Create DB**
+
+### Security Group Creation
+
+**Search EC2**
+
+**Click Secuity Groups (On the left under networking)**
+
+* Create Security Groups
+* Give name and description
+* Add Rule
+	* Type: 
+		* All Traffic
+		* Custom
+	* Source:
+		* Anywhere
+		* (personal IP address)
 
 ## Connect RDS DB to DBeaver
 
