@@ -57,6 +57,17 @@ The cloud refers to any remote server hosted by a external source over the inter
 
 > [Public vs Private vs Hybrid: Cloud Differences Explained](https://www.bmc.com/blogs/public-private-hybrid-cloud/)
 
+**Infrastructure as a Service (IaaS)** is on-demand access to cloud-hosted physical and virtual servers, storage and networking - the backend IT infrastructure for running applications and workloads in the cloud.
+
+**Platform as a Service (PaaS)** is on-demand access to a complete, ready-to-use, cloud-hosted platform for developing, running, maintaining and managing applications.
+
+**Software as a Service (SaaS)** is on-demand access to ready-to-use, cloud-hosted application software.
+
+[What are Iaas, Paas and Saas?](https://www.ibm.com/cloud/learn/iaas-paas-saas)
+
+Amazon Relational Database Service (Amazon RDS) is a web service that makes it easier to set up, operate, and scale a relational database in the AWS Cloud.
+![Amazon RDS](./images/Amazon_RDS.png)
+
 ## AWS RDS Setup Demo
 
 ## Connect RDS DB to DBeaver
