@@ -68,7 +68,50 @@ The cloud refers to any remote server hosted by a external source over the inter
 Amazon Relational Database Service (Amazon RDS) is a web service that makes it easier to set up, operate, and scale a relational database in the AWS Cloud.
 ![Amazon RDS](./images/Amazon_RDS.png)
 
+### Regions
+a highly available data center that houses Amazon Cloud Computing Resources in different areas of the world (25 in total)
+
+![Regions](./images/Regions.png)
+
+### Availability Zones
+Each AWS Region contains multipl distinct locations called Availability Zones, or AZs.
+Each Zone is engineered to be isolated from failures in other Availability Zones. (90 total inthe world)
+
+**Fault-tolerence** defines the ability for a system to remain in operation even if some of the compinents used to build the system fail.
+
+![Fault Zones](./images/Zones.png)
+
 ## AWS RDS Setup Demo
+**Search RDS**
+**Click RDS**
+**Click Create DB**
+
+**DB Create Method**
+
+* Standard Create
+* Version (PostgresSql 14.1)
+
+**Template**
+
+* Free Tier
+
+**Settings**
+
+* DB cluster identifier
+	* "Your-Own-Name"  
+
+* Master username
+	*  "Your-Own-Password"
+
+**Connectivity**
+
+* Settings
+	* Yes
+
+* Security Group
+	* ers-security-group (or your custom security group)
+
+**Click Create DB**
 
 ## Connect RDS DB to DBeaver
 
