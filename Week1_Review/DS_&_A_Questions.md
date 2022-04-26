@@ -40,17 +40,17 @@ Types of Data Structures\*:
 
 > For example: If we want to create sum of two numbers.
 
-Step 1: Determine the goal of the algorithm.
-Step 2: Read input A and B.
-Step 3: Process the input A and B: Sum = A + B
-Step 4: Print Sum -> System.out.println(Sum);
-Step 5: Stop
+**Step 1**: Determine the goal of the algorithm. <br>
+**Step 2**: Read input A and B.<br>
+**Step 3**: Process the input A and B: Sum = A + B <br>
+**Step 4**: Print Sum -> System.out.println(Sum); <br>
+**Step 5**: Stop <br>
 
 > Another example of Algorithm:
 
-![cb4fb6c5ff430fc8988169777d19a1b5.png](file:///C:/Users/dp179/.config/joplin-desktop/resources/43c1b63ce5cd4b65ad2c997171a10582.png)
+![Algorithm Example](./images/Alg_Day2.png)
 
-## What is a breadcrumb statement?
+## What is a breadcrumb statement?\**
 A trail of events that occurred in your application leading up to the primary error. They can be as simple as generic logging messages, or they can contain rich metadata about the state of your application: network requests, database queries, UI events, navigation changes, or even earlier occurring errors.
 
 > example
@@ -84,7 +84,7 @@ for(int i = 0; i < 200; i++){
 * O(n^2)
 * Big -O notion give an upper bound of the computational complexity of an algorithm in the worst case
     
-![4ed73632bc7fe103b85f6f5f53d6e145.png](file:///C:/Users/dp179/.config/joplin-desktop/resources/3cdc1d5ac35646348c11113ac12507d5.png)
+![Big O Notation](./images/Big_O_Notation.png)
 
 ## What is amortized analysis?
 Finds the average cost of each operation in a sequence, when the sequence experiences its worst-case. This way, we can estimate a more precise bound for the worst-case of our sequence.
@@ -95,7 +95,7 @@ A linear data structure which follows a particular order in which the operations
 ## What is an array?
 A collection of items stored at contiguous memory locations. Storing multiple items of the same type together. This makes it easier to calculat ethe posititon of each element by adding an offset to a base value.
 
->Ex: the memory location of the first element of the array (generally denoted by the name of the array). The base value is index 0 and the difference between the two indexes is the offset.
+> Ex: the memory location of the first element of the array (generally denoted by the name of the array). The base value is index 0 and the difference between the two indexes is the offset.
 
 ## How are arrays indexed?
 Arrays are indexed starting with the number 0 for the first element and increasing for each consecutive element
@@ -129,4 +129,6 @@ A part of collection framework and is present in java.util package. It provides 
 The difference between Array and Array List in Java is that the size of an array cannot be modified ( if you want to add or remove elements to/from an array, you have to create a new one). While eleents can be added and removed from an ArrayList.
 
 <hr>
-\* Reviewed item edited by Calvin Raines
+
+\* Reviewed item edited by Calvin Raines<br>
+\* Reviewed item edited by Levi Choi
