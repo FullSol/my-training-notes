@@ -2,24 +2,27 @@
 
 > Note: Don't forget about this document. [Revature Study Guide](https://sites.google.com/revature.com/studyguide/java?authuser=0). The references in this document are from the internet through google searches. These provide additional references to the material below.
 
+> Documented by Calvin Raines and Santiago Garcia II
+
 ## What is Java?
 Java is the #1 programming language and development platform. Java is a programming language and computing platform which has evolved from humble beginnings to power a large share of today’s digital world, by providing the reliable platform upon which many services and applications are built.
 
 Java is a high-level programming language that is multi-threading, secure, strongly- typed and derived from C.
-“write once, run anywhere” ( WORA) – means that compiled java code can run on all platforms that support Java without the need for recompilation.
+
+Java is “write once, run anywhere” (WORA) meaning that compiled Java code can run on all platforms that support Java without the need for recompilation.
 
 [Oracle.com](https://www.oracle.com/java/)
 [Java.com](https://www.java.com/en/download/help/whatis_java.html)
 
 ## What are some of the features/benefits of Java and what do they mean?
 
-- Multithreading – is a technique that allows for concurrent execution of two or more parts of a program for maximum utilization of a CPU.
-- Platform independent
-- Object Oriented
-- Simple (easy to learn)
-- Secure
-- Strongly Typed
-- Automatic memory management
+* Multithreading – is a technique that allows for concurrent execution of two or more parts of a program for maximum utilization of a CPU.
+* Platform independent
+* Object Oriented
+* Simple (easy to learn)
+* Secure
+* Strongly Typed
+* Automatic memory management
 
 ## What is JRE / JDK / JVM?
 
@@ -211,29 +214,27 @@ A stack trace is a list of the method calls that the application was in the midd
 > The stack trace can assist in finding where a bug is present in an application.
 
 ## What are annotations?
-<<<<<<< Updated upstream
 
 ## What is a POJO?
 Plain Old Java Object
 
-=======
-
-## What is a POJO?
+## Explain the POJO Design Pattern. 
 using either abstract classes or interfaces to modularize our applications to better manage our business logic
 
->>>>>>> Stashed changes
-## Explain the POJO Design Pattern. 
-
 ## What is garbage colleciton?
- the process by which Java programs perform automatic memory management
+The process by which Java programs perform automatic memory management
+ 
 ## Can you force garbage collection in Java? When is an object eligible for GC? 
 An object is eligible for garbage collection when there are no more references to that object. References that are held in a variable are usually dropped when the variable goes out of scope. Or, you can explicitly drop an object reference by setting the variable to the special value null.
+
 ## Why are strings immutable in java? How would you make your own objects immutable?
 String is immutable in Java because of the security, synchronization and concurrency, caching, and class loading. The reason of making string final is to destroy the immutability and to not allow others to extend it. The String objects are cached in the String pool, and it makes the String immutable.
+
 ## What is the difference between String, StringBuilder, and StringBuffer? 
 Objects of String are immutable, and objects of StringBuffer and StringBuilder are mutable. StringBuffer and StringBuilder are similar, but StringBuilder is faster and preferred over StringBuffer for the single-threaded program. If thread safety is needed, then StringBuffer is used.
-## What are the different variable scopes in Java? 
-<<<<<<< Updated upstream
+
+## What are the different variable scopes in Java?
+there are three types of variables based on their scope: Member Variables (Class Level Scope) Local Variables (Method Level Scope)
 
 ## What are the access modifiers in Java? Explain them.
 
@@ -247,34 +248,29 @@ Objects of String are immutable, and objects of StringBuffer and StringBuilder a
 
 [Great Learning: Access Modifiers in JAVA](https://www.mygreatlearning.com/blog/the-access-modifiers-in-java/) 
 
-=======
-there are three types of variables based on their scope: Member Variables (Class Level Scope) Local Variables (Method Level Scope)
-## What are the access modifiers in Java? Explain them. 
-Private: The access level of a private modifier is only within the class. It cannot be accessed from outside the class.
-Default: The access level of a default modifier is only within the package. It cannot be accessed from outside the package. If you do not specify any access level, it will be the default.
-Protected: The access level of a protected modifier is within the package and outside the package through child class. If you do not make the child class, it cannot be accessed from outside the package.
-Public: The access level of a public modifier is everywhere. It can be accessed from within the class, outside the class, within the package and outside the package.
->>>>>>> Stashed changes
-## What are the non##access modifiers in Java? 
+## What are the non-access modifiers in Java? 
 Non-access: static, final, abstract, synchronized, volatile, transient and native 
+
 ## What is the difference between static and final variables? 
 static is used to define the class member that can be used independently of any object of the class. In contrast, final is used to declare a constant variable or a method that cannot be overridden or a class that cannot be inherited.
+
 ## What are the default values for all data types in Java? 
-Byte:0
+Byte: 0
 
-Short:0
+Short: 0
 
-Int:0
+Int: 0
 
-Long:0
+Long: 0
 
-Float:0.0
+Float: 0.0
 
-Double:0.0
+Double: 0.0
 
-Boolean:false
+Boolean: false
 
-Char: \u0000′ or null
+Char: \u0000 or null
+
 ## What is a wrapper class? List them. 
 Wrapper classes provide a way to use primitive data types (int, boolean, etc..) as objects.
 
@@ -287,10 +283,13 @@ float/Float
 double/Double
 boolean/Boolean
 char/Character
+
 ## What is autoboxing / unboxing? 
 Autoboxing is the automatic conversion that the Java compiler makes between the primitive types and their corresponding object wrapper classes. For example, converting an int to an Integer, a double to a Double, and so on. If the conversion goes the other way, this is called unboxing.
+
 ## Is Java pass-by-value or pass-by-reference? 
 Arguments in Java are always passed-by-value. During method invocation, a copy of each argument, whether its a value or reference, is created in stack memory which is then passed to the method.
+
 ## How can you make a class immutable? 
 To create an immutable class in Java, you have to do the following steps.
 
@@ -300,8 +299,10 @@ To create an immutable class in Java, you have to do the following steps.
 4.Make all mutable fields final so that its value can be assigned only once.
 5.Initialize all the fields via a constructor performing deep copy.
 6.Perform cloning of objects in the getter methods to return a copy rather than returning the actual object reference.
+
 ## If two objects are equal, do they have the same hashcode? If not equal? 
 If two objects have the same hashcode then they are NOT necessarily equal. Otherwise you will have discovered the perfect hash function. But the opposite is true: if the objects are equal, then they must have the same hashcode .
+
 ## What is a conditional statement? What are the different types?
 is equipped with specific statements that allow us to check a
 condition and execute certain parts of code depending on whether the condition is true or false. Such statements
@@ -317,58 +318,97 @@ Switch Case Statement.
 
 ## What data types are supported in switch statements? 
 The switch statement works with byte, short, int, long, enum types, String and some wrapper types like Byte, Short, Int, and Long.
+
 ## What is a method?
- a block of code which only runs when it is called.
+A block of code which only runs when it is called.
 
 You can pass data, known as parameters, into a method.
 
 Methods are used to perform certain actions, and they are also known as functions.
 
 Why use methods? To reuse code: define the code once, and use it many times.
+
 ## What is the difference between a package and an import in Java?
 Package is used to put all one Module related into one specified Folder for a better understanding ,whereas import is used to import the specific class that we need to run our application/class(Like we use Java. Util...etc).
+
 ## Can an import be static? Give an example of one. 
 static import allows to access the static members of a class without class qualifications.we can access the static members of a class directly without class name or any object For Example, to access the static methods you need to call the using class name: Math.
+
 ## What methods are available in the Object class? 
 Java Object getClass() returns the class name of the object.
 Java Object hashCode() returns the hashcode value of the object.
 Java Object toString() converts an object into the string.
 Java Object equals() checks if two objects are equal.
 Java Object clone() creates a copy of the object.
-## What is the difference between == and .equals()? 
-== checks if both objects point to the same memory location whereas . equals() evaluates to the comparison of values in the objects. If a class does not override the equals method, then by default, it uses the equals(Object o) method of the closest parent class that has overridden this method.
+
+## What is the difference between == and .equals()? **==** checks if both objects point to the same memory location 
+
+**.equals()** evaluates to the comparison of values in the objects. If a class does not override the equals method, then by default, it uses the equals(Object o) method of the closest parent class that has overridden this method.
+
 ## What is an enhanced for loop? 
-The enhanced for loop was introduced in Java 5 as a simpler way to iterate through all the elements of a Collection (Collections are not covered in these pages). It can also be used for arrays, as in the above example, but this is not the original purpose. Enhanced for loops are simple but inflexible.
+The enhanced for loop was introduced in Java 5 as a simpler way to iterate through all the elements of a Collection. It can also be used for arrays, as in the above example, but this is not the original purpose. Enhanced for loops are simple but inflexible.
+
 ## What does the “super” keyword do? 
 refers to superclass (parent) objects. It is used to call superclass methods, and to access the superclass constructor.
+
 ## What is the first line of any constructor? 
 first line of a constructor must either be a call on another constructor in the same class (using this ), or a call on the superclass constructor (using super ). If the first line is neither of these, the compiler automatically inserts a call to the parameterless super class constructor.
+
 ## What happens if you don’t define a constructor for a class? Can you still instantiate it? 
-<<<<<<< Updated upstream
+If we don't define a constructor in a class, then the compiler creates a default constructor(with no arguments) for the class. And if we write a constructor with arguments or no-arguments then the compiler does not create a default constructor.
 
 ## What is a literal value in Java?
 Any constant value which can be assigned to the variable is called literal/constant. 
 
 In simple words, Literals in Java is a synthetic representation of boolean, numeric, character, or string data. It is a medium of expressing particular values in the program, such as an integer variable named ‘’/count is assigned an integer value in the following statement.
 
-=======
-If we don't define a constructor in a class, then the compiler creates a default constructor(with no arguments) for the class. And if we write a constructor with arguments or no-arguments then the compiler does not create a default constructor.
-## What is a literal value in Java?
-iterals in Java is a synthetic representation of boolean, numeric, character, or string data. It is a medium of expressing particular values in the program, such as an integer variable named ''/count is assigned an integer value in the following statement.
->>>>>>> Stashed changes
 ## What are operators? List some operators.
 Arithmetic operators are used to perform common mathematical operations.
 
-Operator	Name	Description	Example	Try it
-+	Addition	Adds together two values	x + y	
--	Subtraction	Subtracts one value from another	x - y	
-*	Multiplication	Multiplies two values	x * y	
-/	Division	Divides one value by another	x / y	
-%	Modulus	Returns the division remainder	x % y	
-++	Increment	Increases the value of a variable by 1	++x	
---	Decrement	Decreases the value of a variable by 1	--x
+**+**	Addition	Adds together two values
+
+```
+x + y	
+```
+
+**-**	Subtraction	Subtracts one value from another
+
+```
+x - y
+```
+
+**\***	Multiplication	Multiplies two values
+
+```
+x * y
+```
+
+**/**	Division	Divides one value by another
+
+```
+x / y
+```
+
+**%**	Modulus	Returns the division remainder
+
+```
+x % y
+```
+
+**++**	Increment	Increases the value of a variable by 1
+
+```
+++x	
+```
+
+**--**	Decrement	Decreases the value of a variable by 1
+
+```
+--x
+```
+
 ## What is the compliation process that our Java code goes through?
-<<<<<<< Updated upstream
+Java source code is compiled into bytecode when we use the javac compiler. The bytecode gets saved on the disk with the file extension . class . When the program is to be run, the bytecode is converted, using the just-in-time (JIT) compiler
 
 ## What is the difference between final, .finalize(), and finally?
 
@@ -376,15 +416,14 @@ Operator	Name	Description	Example	Try it
 ### .finalize()
 ### finally
 
-=======
-Java source code is compiled into bytecode when we use the javac compiler. The bytecode gets saved on the disk with the file extension . class . When the program is to be run, the bytecode is converted, using the just-in-time (JIT) compiler.
 ## What is the difference between final, .finalize(), and finally? 
-finally is the block in Java Exception Handling to execute the important code whether the exception occurs or not.
-finalize is the method in Java which is used to perform clean up processing just before object is garbage collected. 
-Final keyword is used with the classes, methods and variables.
->>>>>>> Stashed changes
+**Finally** is the block in Java Exception Handling to execute the important code whether the exception occurs or not.
+**finalize()** is the method in Java which is used to perform clean up processing just before object is garbage collected. 
+**Final** keyword is used with the classes, methods and variables.
+
 ## What is an exception? What makes it different from an error?
 An Error "indicates serious problems that a reasonable application should not try to catch." An Exception "indicates conditions that a reasonable application might want to catch." Error along with RuntimeException & their subclasses are unchecked exceptions. All other Exception classes are checked exceptions.
+
 ## Explain the difference between throw, throws, and Throwable 
 throws : Used when writing methods, to declare that the method in question throws the specified (checked) exception.
 
@@ -393,73 +432,71 @@ As opposed to checked exceptions, runtime exceptions (NullPointerExceptions etc)
 throw: Instruction to actually throw the exception. (Or more specifically, the Throwable).
 
 The throw keyword is followed by a reference to a Throwable (usually an exception).
+
 ## Do you need a try block? 
 It must be used within the method. If an exception occurs at the particular statement in the try block, the rest of the block code will not execute. So, it is recommended not to keep the code in try block that will not throw an exception. Java try block must be followed by either catch or finally block.
+
 ## Do you need a catch block? 
 It is not necessary to catch all exceptions. In Java there is two types of exceptions: checked and unchecked. The rule is simple a checked exception has to be handled by the caller while an unchecked exception can be handled either by not catching it, or by catching it.
+
 ## What is Java? What are some of the features/benefits of Java and what do they mean?
 Java is platform-independent. Some programs developed in one machine can be executed in another machine. It is designed for building object-oriented applications. It is a multithreaded language with automatic memory management. It is created for the distributed environment of the Internet.
+
 ## What is JRE / JDK / JVM? 
 JRE (Java Runtime Environment) is an installation package that provides an environment to only run(not develop) the java program(or application)onto your machine. JRE is only used by those who only want to run Java programs that are end-users of your system.
 
 Java Development Kit (JDK) is a software development environment used for developing Java applications and applets. It includes the Java Runtime Environment (JRE), an interpreter/loader (Java), a compiler (javac), an archiver (jar), a documentation generator (Javadoc), and other tools needed in Java development. 
 
 JVM (Java Virtual Machine) is a very important part of both JDK and JRE because it is contained or inbuilt in both. Whatever Java program you run using JRE or JDK goes into JVM and JVM is responsible for executing the java program line by line, hence it is also known as an interpreter.
+
 ## What is the difference between an object and a class? 
  A class is a template used for the creation of objects. An object is an instance of a class. While a class is a logical entity, an object is a physical entity. Each object has a state in which all the member variables have specific values.
+
 ## What is the root class from which every class extends? 
 Object class is the root or superclass of the class hierarchy, which is present in java. lang package. All predefined classes and user-defined classes are the subclasses from Object class.
-## What are the primitive data types in Java? 
-type    Size(Bits)
-byte	8	-27	27– 1	byte b = 100;
-short	16	-215	215– 1	short s = 30_000;
-int	32	-231	231– 1	int i = 100_000_000;
-long	64	-263	263– 1	long l = 100_000_000_000_000;
-float	32	-2-149	(2-2-23)·2127	float f = 1.456f;
-double	64	-2-1074	(2-2-52)·21023	double f = 1.456789012345678;
-char	16	0	216– 1	char c = ‘c';
-boolean	1	–	–	boolean b = true;
+
 ## Explain stack vs heap
 Java Heap Space is used throughout the application, but Stack is only used for the method — or methods — currently running. The Heap Space contains all objects are created, but Stack contains any reference to those objects. Objects stored in the Heap can be accessed throughout the application.
+
 ## Where are Strings stored in memory? 
 strings are stored in the heap area.
+
 ## Are variable references stored on the stack or heap? What about the objects they refer to? 
 All objects in Java are stored on the heap. The "variables" that hold references to them can be on the stack or they can be contained in other objects (then they are not really variables, but fields), which puts them on the heap also.
+
 ## What is a stack trace? What kind of information do they tell you? 
 represents the call stack at a given point in time, with each element representing a method execution. Generally, a stack trace is generated when an Exception is not handled properly in code. (Exceptions inform you when your code has an error.)
+
 ## What are annotations? 
 metadata (data about data) for our program source code. They provide additional information about the program to the compiler but are not part of the program itself. These annotations do not affect the execution of the compiled program. Let's take an example of @Override annotation.
+
 ## What is a POJO?
 a plain old Java object (POJO) is an ordinary Java object, not bound by any special restriction.
+
 ## Explain the POJO Design Pattern. 
-using either abstract classes or interfaces to modularize our applications to better manage our business logic
-Business Object - Business Service fills the Transfer Object with data.
+Using either abstract classes or interfaces to modularize our applications to better manage our business logic
 
-Transfer Object - Simple POJO having methods to set/get attributes only.
+**Business Object** - Business Service fills the Transfer Object with data.
 
-Client - Client either requests or sends the Transfer Object to Business Object.
+**Transfer Object** - Simple POJO having methods to set/get attributes only.
+
+**Client** - Client either requests or sends the Transfer Object to Business Object.
+
 ## What is garbage colleciton?
 s the process by which Java programs perform automatic memory management. Java programs compile to bytecode that can be run on a Java Virtual Machine, or JVM for short. When Java programs run on the JVM, objects are created on the heap, which is a portion of memory dedicated to the program.
+
 ## Can you force garbage collection in Java? When is an object eligible for GC? 
 An object is eligible to be garbage collected if its reference variable is lost from the program during execution. Sometimes they are also called unreachable objects. What is reference of an object? The new operator dynamically allocates memory for an object and returns a reference to it
+
 ## Why are strings immutable in java? How would you make your own objects immutable?
 the immutable string or objects that cannot be modified once it is created. But we can only change the reference to the object. We restrict to change the object itself. The String is immutable in Java because of the security, synchronization and concurrency, caching, and class loading.
 
 ## What is JUnit? 
-<<<<<<< Updated upstream
+A unit testing framework for the Java programming language. JUnit has been important in the development of test-driven development, and is one of a family of unit testing frameworks which is collectively known as xUnit that originated with SUnit. JUnit is linked as a JAR at compile-time.
 
-## What is TDD?
-
-## What are the annotations in JUnit? Order of execution?
-
-## What are assertions?
-
-## Give an example of a test case
-
-=======
-is a unit testing framework for the Java programming language. JUnit has been important in the development of test-driven development, and is one of a family of unit testing frameworks which is collectively known as xUnit that originated with SUnit. JUnit is linked as a JAR at compile-time.
 ## What is TDD? 
 is a software development process which includes test-first development. It means that the developer first writes a fully automated test case before writing the production code to fulfil that test and refactoring.
+
 ## What are the annotations in JUnit? Order of execution? 
 Unit4 are:
 
@@ -467,8 +504,10 @@ Unit4 are:
 @AfterClass
 @Before
 @After
+
 ## What are assertions?
 is a statement in the JavaTM programming language that enables you to test your assumptions about your program. For example, if you write a method that calculates the speed of a particle, you might assert that the calculated speed is less than the speed of light.
+
 ## Give an example of a test case 
 two types of unit testing possible, Manual testing and Automated testing. Manual testing is a special type of testing in which the test cases are executed without using any tool. Unlike manual testing, automated testing is not possible without supporting any tool.
 
@@ -476,6 +515,8 @@ The org.junit package provides several classes and packages, which helps us to e
 JunitTestCaseExample.java
 
 package JavaTpoint. JunitExamples;  
+
+```
 import java.util.ArrayList;  
 import java.util.List;  
 public class JunitTestCaseExample {  
@@ -497,9 +538,12 @@ public class JunitTestCaseExample {
         return students.size();  
     }  
       
-}  
+}
+```
+
 TestJunitTestCaseExample.java
 
+```
 package JavaTpoint.JunitExamples;  
 import static org.junit.Assert.assertEquals;  
 import org.junit.Test;  
@@ -536,11 +580,14 @@ public class TestJunitTestCaseExample {
     public void removeAll() {  
         obj.removeAll();  
     }  
-}  
+}
+
+```
+
 TestRunner.java
 
-package JavaTpoint.JunitExamples;  
-  
+```
+package JavaTpoint.JunitExamples;    
 import org.junit.runner.Result;  
 import org.junit.runner.JUnitCore;  
 import org.junit.runner.notification.Failure;  
@@ -555,7 +602,9 @@ public class TestRunner {
           
       System.out.println(result.wasSuccessful());  
    }  
-}    
+}
+```
+
 Explanation
 
 We have created three java classes, i.e., JunitTestCaseExample.java, TestJunitTestCaseExample.java, and TestRunner.java. In the JunitTestCaseExample.java class, we created the code which we want to test. In this class, we create a list of names and four methods to add an element, remove an element, get the list's size, and remove all elements from the list.
@@ -563,29 +612,36 @@ We have created three java classes, i.e., JunitTestCaseExample.java, TestJunitTe
 In the TestJunitTestCaseExample.java, we write the test cases for the JunitTestCaseEample.java class. We create an object of the JunitTestCaseExample.java class, and by using its object, we will test all its methods. We use the assertEquals() method to check the actual result with the expected output.
 
 We create the TestRunner.java class to execute the test cases. It contains the main() method in which we run the TestJunitTestCaseExample.java class using the runClasses() method of the JUnitCore. In this method, we pass the class file of the TestJunitTestCaseExample.java. The result returned by the runClasses() method will store into the result variable of type Result.
->>>>>>> Stashed changes
-## How would you prevent a test from being run without commenting it out?
-6
 
+
+## How would you prevent a test from being run without commenting it out?
 @Ignore annotation is in a package org.junit so you need to add import statement
 
 import org.junit.Ignore;
 or
 
 import org.junit.*;
-Next time you have a problem like this you can just google class name (e.g. junit @Ignore) go to the documentation page and check package name.
 
-In NetBeans you can use "Source -> Fix Imports" command (Ctrl + Shift + I) and IDE will try to resolve necessary imports automatically.
+> Next time you have a problem like this you can just google class name (e.g. junit @Ignore) go to the documentation page and check package name.
+
+> In NetBeans you can use "Source -> Fix Imports" command (Ctrl + Shift + I) and IDE will try to resolve necessary imports automatically.
+
 ## What is Mockito? How do you use it in a test case?
 Mockito records the interaction with mock and allows you to check if the mock object was used correct, e.g. if a certain method has been called on the mock. This allows you to implement behavior testing instead of only testing the result of method calls.
+
 ## What is the difference between a mock and a stub?
 Mocks verify the behavior of the code you're testing, also known as the system under test. Mocks should be used when you want to test the order in which functions are called. Stubs verify the state of the system under test.
+
 ## What is the difference between a parameter and an argument?
-<<<<<<< Updated upstream
+**Java argument** is a variable whose value is passed into a function and is used whenever a function is called. 
 
-## What are collections in Java?
+**The parameter** is the value that is defined in a functional block. So, it is basically used whenever we need to pass a value to a particular functional block.
 
-## What are the interfaces in the Collections API?
+## What are collections in Java? 
+The Java collections framework is a set of classes and interfaces that implement commonly reusable collection data structures. Although referred to as a framework, it works in a manner of a library. The collections framework provides both interfaces that define various collections and classes that implement them
+
+## What are the interfaces in the Collections API? 
+The Collection interface is a member of the Java Collections Framework. It is a part of java.util package. It is one of the root interfaces of the Collection Hierarchy. The Collection interface is not directly implemented by any class. However, it is implemented indirectly via its subtypes or subinterfaces like List, Queue, and Set.
 
 ## What is the difference between an Array and an ArrayList?
 An array is a basic functionality provided by Java, whereas ArrayList is a class of Java Collections framework. It belongs to java.util package.
@@ -604,21 +660,15 @@ We can create an instance of ArrayList by using the following statement:
 ```
 ArrayList<Type> arrayList=new ArrayList<Type>();
 ```
-
-=======
-Java argument is a variable whose value is passed into a function and is used whenever a function is called. 
-The parameter is the value that is defined in a functional block. So, it is basically used whenever we need to pass a value to a particular functional block.
-## What are collections in Java? 
-The Java collections framework is a set of classes and interfaces that implement commonly reusable collection data structures. Although referred to as a framework, it works in a manner of a library. The collections framework provides both interfaces that define various collections and classes that implement them
-## What are the interfaces in the Collections API? 
-The Collection interface is a member of the Java Collections Framework. It is a part of java.util package. It is one of the root interfaces of the Collection Hierarchy. The Collection interface is not directly implemented by any class. However, it is implemented indirectly via its subtypes or subinterfaces like List, Queue, and Set. 
+ 
 ## What is the difference between an Array and an ArrayList? 
 An array is a fixed-length data structure. ArrayList is a variable-length data structure. It can be resized itself when needed. It is mandatory to provide the size of an array while initializing it directly or indirectly.
->>>>>>> Stashed changes
+
 ## Are Maps in the Collections API? What makes Map different from other interfaces? 
 A Map is an object that maps keys to values. A map cannot contain duplicate keys: Each key can map to at most one value. It models the mathematical function abstraction. The Map interface includes methods for basic operations (such as put, get, remove, containsKey, containsValue, size, and empty), bulk operations (such as putAll and clear), and collection views (such as keySet, entrySet, and values).
 
 The Java platform contains three general-purpose Map implementations: HashMap, TreeMap, and LinkedHashMap. Their behavior and performance are precisely analogous to HashSet, TreeSet, and LinkedHashSet, as described in The Set Interface section.
+
 ## List several ways to iterate over a Collection. How would you iterate over an ArrayList? 
 ArrayList is a part of collection framework and is present in java.util package. It provides us with dynamic arrays in Java. Though, it may be slower than standard arrays but can be helpful in programs where lots of manipulation in the array is needed. This class is found in java.util package.
 
@@ -636,14 +686,17 @@ Using Enumeration interface
 ## What is the purpose of the Iterable interface? What about Iterator? 
 It belongs to java.
 In general, an object Implementing Iterable allows it to be iterated. An iterable interface allows an object to be the target of enhanced for loop(for-each loop). Here, T is the type of element returned by the Iterator.
+
 ## What is the difference between the Comparable and Comparator interfaces? 
 Comparable interface is used to sort the objects with natural ordering. Comparator in Java is used to sort attributes of different objects. 
 Comparable interface compares “this” reference with the object specified. Comparator in Java compares two different class objects provided.
+
 ## What are generics? What is the diamond operator (<>)? 
 
  Generics means parameterized types. The idea is to allow type (Integer, String, … etc., and user-defined types) to be a parameter to methods, classes, and interfaces. Using Generics, it is possible to create classes that work with different data types. An entity such as class, interface, or method that operates on a parameterized type is a generic entity.
  
  diamond operator adds type inference and reduces the verbosity in the assignments 
+
 ## Create and instantiate a generic class. Create and use a generic method.
 
 // Java program to show working of user defined
@@ -674,16 +727,20 @@ class Main {
 
 ## What is the generic wildcard? What does it mean? How do you use in your Java code?
 The question mark (?) is known as the wildcard in generic programming. It represents an unknown type. The wildcard can be used in a variety of situations such as the type of a parameter, field, or local variable; sometimes as a return type.
+
 ## How do you serialize / deserialize an object in Java? 
 Serialization is a mechanism of converting the state of an object into a byte stream. Deserialization is the reverse process where the byte stream is used to recreate the actual Java object in memory. This mechanism is used to persist the object.
 The byte stream created is platform independent. So, the object serialized on one platform can be deserialized on a different platform.
 
 To make a Java object serializable we implement the java.io.Serializable interface.
 The ObjectOutputStream class contains writeObject() method for serializing an Object.
+
 ## Difference between FileReader and BufferedReader? 
 FileReader and BufferedReader are two classes to perform operations on files. The main difference between FileReader and BufferedReader in Java is that FileReader reads characters from a file while BufferedReader reads characters from another Reader.
+
 ## Explain the try-with-resources syntax 
 The try -with-resources statement is a try statement that declares one or more resources. A resource is an object that must be closed after the program is finished with it. The try -with-resources statement ensures that each resource is closed at the end of the statement. Any object that implements java.
+
 ## List some methods in the Scanner class 
 The Scanner class provides various methods that allow us to read inputs of different types.
 
@@ -697,12 +754,16 @@ nextByte()	reads a byte value from the user
 nextDouble()	reads a double value from the user
 nextShort()	reads a short value from the user
 nextLong()	reads a long value from the user
+
 ## What is Maven?
 Maven is a build automation tool used primarily for Java projects. Maven can also be used to build and manage projects written in C#, Ruby, Scala, and other languages. The Maven project is hosted by the Apache Software Foundation, where it was formerly part of the Jakarta Project.
+
 ## Where / when does Maven retrieve dependencies from? Where are they stored locally? 
 When you run a Maven build, then Maven automatically downloads all the dependency jars into the local repository. It helps to avoid references to dependencies stored on remote machine every time a project is build. Maven local repository by default get created by Maven in %USER_HOME% directory.
-## What is the POM and what is the pom.xml? 
+
+# What is the POM and what is the pom.xml? 
 POM is an acronym for Project Object Model. The pom. xml file contains information of project and configuration information for the maven to build the project such as dependencies, build directory, source directory, test source directory, plugin, goals etc. Maven reads the pom.
+
 ## What are the OOP Pillars? What do each of them mean?
 
 ## Be able to give a definition, real-life example, and Java-related example about each of the pillars:
@@ -766,10 +827,76 @@ Easy to test: Unit testing is easy for encapsulated classes
  
 ## What are states in OOP? Behaviors?
 State simply means data or value. Behavior means action or work or task or operation that the object does
-## What is shadowing?
-Shadowing in Java is the practice of using variables in overlapping scopes with the same name where the variable in low-level scope overrides the variable of high-level scope. Here the variable at high-level scope is shadowed by the low-level scope variable.
+
+## What is shadowing?\*
+Shadowing in Java is the practice of using variables in overlapping scopes with the same name where the variable in low-level scope overrides the variable of high-level scope.
+
+```
+// Java program to demonstrates Shadowing in Java
+ 
+// Class 1 and 2
+// Outer Class
+class Shadowing {
+ 
+    // Instance variable or member variable
+    String name = "Outer John";
+ 
+    // Nested class
+    // Inner Class
+    class innerShadowing {
+ 
+        // Instance variable or member variable
+        String name = "Inner John";
+ 
+        // Method of inner class
+        // To print the content
+        public void print(String name)
+        {
+ 
+            // Print statements
+ 
+            System.out.println(name);
+            // This keyword refers to current instance
+            // itself
+            System.out.println(this.name);
+            System.out.println(Shadowing.this.name);
+        }
+    }
+}
+ 
+// Class 3
+// Main class
+class GFG {
+ 
+    // Main driver method
+    public static void main(String[] args)
+    {
+ 
+        // Accessing an inner class by
+        // creating object of Outer class inside main()
+        // method
+        Shadowing obj = new Shadowing();
+ 
+        Shadowing.innerShadowing innerObj
+            = obj.new innerShadowing();
+ 
+        // Function Call
+        innerObj.print("Parameter John");
+    }
+}
+```
+Output
+
+```
+Parameter John
+Inner John
+Outer John
+```
+
 ## What is a covariant? 
 Covariant return type refers to return type of an overriding method. It allows to narrow down return type of an overridden method without any need to cast the type or check the return type. Covariant return type works only for non-primitive return types.
 
 From Java 5 onwards, we can override a method by changing its return type only by abiding the condition that return type is a subclass of that of overridden method return type.
 
+<hr>
+\* Reviewed item edited by Calvin Raines
