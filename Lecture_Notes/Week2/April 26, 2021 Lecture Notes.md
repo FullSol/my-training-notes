@@ -1,5 +1,5 @@
 # April 26, 2021 Lecture Notes
-> Break for 1:! & Instructor Revature Meeting (1.5hr)
+> Break for 1:1 & Instructor Revature Meeting (1.5hr)
 > QC 2:00 PM EST
 
 ## Basics of Cloud Computing & AWS
@@ -120,12 +120,12 @@ Each Zone is engineered to be isolated from failures in other Availability Zones
 
 **Search EC2**
 
-**Click Secuity Groups (On the left under networking)**
+**Click Secuity Groups (On the left under Networking)**
 
 * Create Security Groups
 * Give name and description
 * Add Rule
-	* Type: 
+	* Type:
 		* All Traffic
 		* Custom
 	* Source:
@@ -135,7 +135,115 @@ Each Zone is engineered to be isolated from failures in other Availability Zones
 ## Connect RDS DB to DBeaver
 
 ## SQL Basics
+### What is SQL?
+Stands for Structured Query Language
+This is used to create and manage relational database sing human-readable language
+
+### What is a database?
+A collection of related data
+
+**DBMS (Database Management System)** is a collection of programs used to create and maintain a database.
+
+### Why use a database?
+* Store our data in a structured format
+* Allows us concurrent use of data to many users
+* Control access to the data through usage of admin privelages
+* Maintain data intgrity aka maintain the consistency and accuaracy of our data
+* Provides good data backup and recovery
+
+**RDBMS (Relational Database Management System)** refers to a database that stores data in a structured format consisting of table, rows and columns
+
+**Table** - Collective group of data
+**Column** data categories
+**Rows** - particular instances of a data category
+**Schema** - layout of our database (similar to how classes are blueprints of our Java objects)
+
+### Demo Schema:
+
+**referential integrity** - Establishing relationships between tables through use of PLs and FKs
+**primary key** - unique, non-null identifier for a table
+
+* Departments
+	* id (**primary key**)
+	* name
+	* monthly budget
+* Employees
+	* id (**primary key**)
+	* first_name
+	* last_name
+	* birthdate
+	* monthly_income
+	* department_id (foreign key, **primary key** from another table)
+	* hire_date
+	* job_title
+	* email
+* Products
+	* id (PK)
+	* name
+	* price
+	* expiration_date
+
+### SQL can be broken down into 5 sublanguages:
+1. **DDL** - Data Definition Language.
+	* Used to manage the structure of database schema
+	* Commands: CREATE, DROP, TRUNCATE, ALTER, RENAME
+2. **DML** - Data Manipulation Language.
+	* Used to manipulate the data in our DB
+	* Commands: INSERT, UPDATE, DELETE (CRUD)
+	
+	> C.R.U.D. - Create Read Update Delete
+	
+3. **DQL** - Data Query Language
+	* Used to retrieve information from our database
+	* Commands: SELECT
+4. **DCL** - Data Control Language
+	* Used to give privilages/access of our data
+	* Commands: GRANT, REVOKE
+5. **TCL** - Transaction Control Language
+	* Apply the changes of out data permanently into our DB
+	* Commands: COMMIT, ROLLBACK, SAVEPOINT
+
+```
+-- common to see a series of DROP table statments at the beginning of any table creation script
+
+DROP table if exists products;
+DROP table if exists employees;
+DROP table if exists departments;
+
+CREATE TABLE departments(
+-- serial is an auto incremented numeric data type in SQL
+-- varchar is for string values
+-- numeric is for decimal
+	id serial constraint department_pk primary key, --inline constraint declaration
+	name varchar(25) unique not null, -- canidate key (a column that could be a pk, but is not)
+	monthly_budget numeric(8, 2) 
+	-- first number is precision (# of digits allowed)
+	-- second number is scale (# of decimal places)
+);
+
+-- SQL strings are single quoted
+INSERT INTO departments VALUES (1, 'Accounting', 20000);
+INSERT INTO departments (name, monthly_budget) VALUES ('Marketing', 15000);
+INSERT INTO departments (name, monthly_budget)
+VALUES
+('IT', 30000),
+('Human resources', 25000),
+('Customer Service', 3200),
+('Internal Affaris', 5000);
+
+-- Query the records within th table
+-- * is the wildcard for all columns within a given table
+SELECT * FROM departments;
+
+-- TO NARROW DOWN MY INFO SEARCH TO PARTICULAR ID NUMBERS
+-- To narrow down the info search to particular numbers
+-- WHERE is used ot filter information based on a condition
+SELECT * FROM departments WHERE id = 4;
+SELECT name, monthly_budget FROM departments WHERE id = 3;
+```
 
 ### Multiplicity
+
+> Will be reviewed tomorrow
 
 
