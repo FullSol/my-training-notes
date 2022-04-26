@@ -216,10 +216,16 @@ A stack trace is a list of the method calls that the application was in the midd
 ## What are annotations?
 
 ## What is a POJO?
-Plain Old Java Object
+a plain old Java object (POJO) is an ordinary Java object, not bound by any special restriction.
 
 ## Explain the POJO Design Pattern. 
-using either abstract classes or interfaces to modularize our applications to better manage our business logic
+Using either abstract classes or interfaces to modularize our applications to better manage our business logic
+
+**Business Object** - Business Service fills the Transfer Object with data.
+
+**Transfer Object** - Simple POJO having methods to set/get attributes only.
+
+**Client** - Client either requests or sends the Transfer Object to Business Object.
 
 ## What is garbage colleciton?
 The process by which Java programs perform automatic memory management
@@ -470,20 +476,8 @@ represents the call stack at a given point in time, with each element representi
 ## What are annotations? 
 metadata (data about data) for our program source code. They provide additional information about the program to the compiler but are not part of the program itself. These annotations do not affect the execution of the compiled program. Let's take an example of @Override annotation.
 
-## What is a POJO?
-a plain old Java object (POJO) is an ordinary Java object, not bound by any special restriction.
-
-## Explain the POJO Design Pattern. 
-Using either abstract classes or interfaces to modularize our applications to better manage our business logic
-
-**Business Object** - Business Service fills the Transfer Object with data.
-
-**Transfer Object** - Simple POJO having methods to set/get attributes only.
-
-**Client** - Client either requests or sends the Transfer Object to Business Object.
-
 ## What is garbage colleciton?
-s the process by which Java programs perform automatic memory management. Java programs compile to bytecode that can be run on a Java Virtual Machine, or JVM for short. When Java programs run on the JVM, objects are created on the heap, which is a portion of memory dedicated to the program.
+The process by which Java programs perform automatic memory management. Java programs compile to bytecode that can be run on a Java Virtual Machine, or JVM for short. When Java programs run on the JVM, objects are created on the heap, which is a portion of memory dedicated to the program.
 
 ## Can you force garbage collection in Java? When is an object eligible for GC? 
 An object is eligible to be garbage collected if its reference variable is lost from the program during execution. Sometimes they are also called unreachable objects. What is reference of an object? The new operator dynamically allocates memory for an object and returns a reference to it
@@ -630,7 +624,9 @@ import org.junit.*;
 Mockito records the interaction with mock and allows you to check if the mock object was used correct, e.g. if a certain method has been called on the mock. This allows you to implement behavior testing instead of only testing the result of method calls.
 
 ## What is the difference between a mock and a stub?
-Mocks verify the behavior of the code you're testing, also known as the system under test. Mocks should be used when you want to test the order in which functions are called. Stubs verify the state of the system under test.
+**Mocks** verify the behavior of the code you're testing, also known as the system under test. Mocks should be used when you want to test the order in which functions are called.
+
+**Stubs** verify the state of the system under test.
 
 ## What is the difference between a parameter and an argument?
 **Java argument** is a variable whose value is passed into a function and is used whenever a function is called. 
@@ -766,63 +762,73 @@ POM is an acronym for Project Object Model. The pom. xml file contains informati
 
 ## What are the OOP Pillars? What do each of them mean?
 
-## Be able to give a definition, real-life example, and Java-related example about each of the pillars:
+> Be able to give a definition, real-life example, and Java-related example about each of the pillars:
 
-1. Abstraction
+### Abstraction
 There are two ways to achieve abstraction in Java
 
 Abstract class (0 to 100%)
 Interface (100%)
-Real-Life Example: A driver will focus on the car functionality (Start/Stop -> Accelerate/ Break), he/she does not bother about how the Accelerate/ brake mechanism works internally. And this is how the abstraction works.
+
+> Real-Life Example: A driver will focus on the car functionality (Start/Stop -> Accelerate/ Break), he/she does not bother about how the Accelerate/ brake mechanism works internally. And this is how the abstraction works.
 
 Certain key points should be remembered regarding this pillar of OOPS as follows:
 
 The class should be abstract if a class has one or many abstract methods
 An abstract class can have constructors, concrete methods, static method, and final method
 Abstract class can’t be instantiated directly with the new operator. It can be possible as shown in pre tag below:
-2. Polymorphism
+
+### Polymorphism
 Polymorphism is the ability to perform many things in many ways. The word Polymorphism is from two different Greek words- poly and morphs. “Poly” means many, and “Morphs” means forms. So polymorphism means many forms. The polymorphism can be present in the case of inheritance also. The functions behave differently based on the actual implementation.
 
-Real-life Example:
+> Real-life Example:
 
-A delivery person delivers items to the user. If it’s a postman he will deliver the letters. If it’s a food delivery boy he will deliver the foods to the user. Like this polymorphism implemented different ways for the delivery function.
+> A delivery person delivers items to the user. If it’s a postman he will deliver the letters. If it’s a food delivery boy he will deliver the foods to the user. Like this polymorphism implemented different ways for the delivery function.
+
 
 There are two types of polymorphism as listed below:
 
-Static or Compile-time Polymorphism
-Dynamic or Run-time Polymorphism
-Static or Compile-time Polymorphism when the compiler is able to determine the actual function, it’s called compile-time polymorphism. Compile-time polymorphism can be achieved by method overloading in java. When different functions in a class have the same name but different signatures, it’s called method overloading. A method signature contains the name and method arguments. So, overloaded methods have different arguments. The arguments might differ in the numbers or the type of arguments.
-3. Inheritance
-nheritance is the process of one class inheriting properties and methods from another class in Java. Inheritance is used when we have is-a relationship between objects.  Inheritance in Java is implemented using extends keyword.
+* Static or Compile-time Polymorphism
+* Dynamic or Run-time Polymorphism
 
-Real-life Example:
+**Static** or Compile-time Polymorphism when the compiler is able to determine the actual function, it’s called compile-time polymorphism.
 
-The planet Earth and Mars inherits the super class Solar System and Solar system inherits the Milky Way Galaxy. So Milky Way Galaxy is the top super class for Class Solar System, Earth and Mars.
+**Compile-time** polymorphism can be achieved by method overloading in java. When different functions in a class have the same name but different signatures, it’s called method overloading. A method signature contains the name and method arguments. So, overloaded methods have different arguments. The arguments might differ in the numbers or the type of arguments.
 
-Let us do discuss the usage of inheritance in java applications with a generic example before proposing the code. So consider an example extending the Exception class to create an application-specific Exception class that contains more information like error codes. For example NullPointerException.
+### Inheritance
+Inheritance is the process of one class inheriting properties and methods from another class in Java. Inheritance is used when we have is-a relationship between objects.  Inheritance in Java is implemented using extends keyword.
+
+> Real-life Example:
+
+> The planet Earth and Mars inherits the super class Solar System and Solar system inherits the Milky Way Galaxy. So Milky Way Galaxy is the top super class for Class Solar System, Earth and Mars.
+
+> Let us do discuss the usage of inheritance in java applications with a generic example before proposing the code. So consider an example extending the Exception class to create an application-specific Exception class that contains more information like error codes. For example NullPointerException.
 
 There are 5 different types of inheritance in java as follows:
 
-Single Inheritance: Class B inherits Class B using extends keyword
-Multilevel Inheritance: Class C inherits class B and B inherits class A using extends keyword
-Hierarchy Inheritance: Class B and C inherits class A in hierarchy order using extends keyword
-Multiple Inheritance: Class C inherits Class A and B. Here A and B both are superclass and C is only one child class. Java is not supporting Multiple Inheritance, but we can implement using Interfaces.
-Hybrid Inheritance: Class D inherits class B and class C. Class B and C inherits A. Here same again Class D inherits two superclass, so Java is not supporting Hybrid Inheritance as well.
-4. Encapsulation
+* Single Inheritance: Class B inherits Class B using extends keyword
+* Multilevel Inheritance: Class C inherits class B and B inherits class A using extends keyword
+* Hierarchy Inheritance: Class B and C inherits class A in hierarchy order using extends keyword
+* Multiple Inheritance: Class C inherits Class A and B. Here A and B both are superclass and C is only one child class. Java is not supporting Multiple Inheritance, but we can implement using Interfaces.
+* Hybrid Inheritance: Class D inherits class B and class C. Class B and C inherits A. Here same again Class D inherits two superclass, so Java is not supporting Hybrid Inheritance as well.
+
+### Encapsulation
 Encapsulation is the process of wrapping code and data together into a single unit.
 
-Real-Life Example:
+> Real-Life Example:
 
-A capsule which is mixed of several medicines. The medicines are hidden data to the end user.
+> A capsule which is mixed of several medicines. The medicines are hidden data to the end user.
 
 In order to achieve encapsulation in java follow certain steps as proposed below:
 
-Declare the variables as private
-Declare the setters and getters to set and get the variable values
-Note: There are few disadvantages of encapsulation in java as follows:
+* Declare the variables as private
+* Declare the setters and getters to set and get the variable values
 
-Control Over Data: We can write the logic in the setter method to not store the negative values for an Integer. So by this way we can control the data.
-Data Hiding: The data members are private so other class can’t access the data members.
+There are few disadvantages of encapsulation in java as follows:
+
+* Control Over Data: We can write the logic in the setter method to not store the negative values for an Integer. So by this way we can control the data.
+* Data Hiding: The data members are private so other class can’t access the data members.
+
 Easy to test: Unit testing is easy for encapsulated classes
  
 ## What are states in OOP? Behaviors?
@@ -899,4 +905,5 @@ Covariant return type refers to return type of an overriding method. It allows t
 From Java 5 onwards, we can override a method by changing its return type only by abiding the condition that return type is a subclass of that of overridden method return type.
 
 <hr>
+
 \* Reviewed item edited by Calvin Raines

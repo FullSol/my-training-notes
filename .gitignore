@@ -1,3 +1,6 @@
 *.DS_Store
 *.vscode
 *.settings
+
+.DS_Store
+Week1_Review/.DS_Store
