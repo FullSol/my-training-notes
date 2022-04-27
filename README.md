@@ -33,7 +33,8 @@ Here's a list of specific notes (starting with Week 2)
 * [HelloPOJO](https://github.com/FullSol/my-training-notes/tree/master/demos/1-Java/HelloPOJO)
 * [HelloMockitoMaven](https://github.com/FullSol/my-training-notes/tree/master/demos/1-Java/HelloMockitoMaven)
 
-## Week 1 Review Docs
+## Weekly Review Docs
+### Week 1
 * [DS & A Questions](https://github.com/FullSol/my-training-notes/blob/master/Weekly_Reviews/Week1/DS_%26_A_Questions.md)
 * [Git Questions](https://github.com/FullSol/my-training-notes/blob/master/Weekly_Reviews/Week1/Git_Questions.md)
 * [Java Questions](https://github.com/FullSol/my-training-notes/blob/master/Weekly_Reviews/Week1/Java_Questions.md)
