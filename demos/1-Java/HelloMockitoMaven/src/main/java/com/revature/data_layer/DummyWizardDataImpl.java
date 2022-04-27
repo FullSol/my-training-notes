@@ -30,8 +30,8 @@ public class DummyWizardDataImpl implements DummyWizardData {
 		return WIZARD_ID;
 	}
 
-	public static void setWIZARD_ID(int wIZARD_ID) {
-		WIZARD_ID = wIZARD_ID;
+	public static void setWIZARD_ID(int wizardId) {
+		WIZARD_ID = wizardId;
 	}
 
 	@Override

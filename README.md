@@ -1,6 +1,21 @@
 # April 18, 2022 Java / Angular Enterprise Batch
 ### Notes, demos, and more from this Batch
 
+## Lecture Notes
+All notes can be found in the [Main Folder](https://github.com/FullSol/my-training-notes/tree/master/Lecture_Notes)
+
+Here's a list of specific notes (starting with Week 2)
+
+* [April 25, 2022 Lecture Notes](https://github.com/FullSol/my-training-notes/blob/master/Lecture_Notes/Week2/04.25.2022_Lecture_Notes.md)
+	* Quiz Day
+	* No Lecture
+* [April 26, 2022 Lecture Notes](https://github.com/FullSol/my-training-notes/blob/master/Lecture_Notes/04.22.2022_Lecture_Notes.md)
+	* Custom Array List
+	* SOLID Principle
+	* SDLC
+	* Moking with Mockito
+* [April 27, 2022]()
+
 ## Demos
 * [HelloWorld](https://github.com/FullSol/my-training-notes/tree/master/demos/1-Java/HelloWorld)
 * [HelloVariableScopes](https://github.com/FullSol/my-training-notes/tree/master/demos/1-Java/HelloVariableScopes)
