@@ -2,20 +2,26 @@
 ### Notes, demos, and more from this Batch
 
 ## Lecture Notes
-All notes can be found in the [Main Folder](https://github.com/FullSol/my-training-notes/tree/master/Lecture_Notes)
+All notes can be found in the **[Main Folder](https://github.com/FullSol/my-training-notes/tree/master/Lecture_Notes)**
 
 Here's a list of specific notes (starting with Week 2)
 
-* [April 25, 2022 Lecture Notes](https://github.com/FullSol/my-training-notes/blob/master/Lecture_Notes/Week2/04.25.2022_Lecture_Notes.md)
-	* Quiz Day
-	* No Lecture
-* [April 26, 2022 Lecture Notes](https://github.com/FullSol/my-training-notes/blob/master/Lecture_Notes/04.26.2022_Lecture_Notes.md)
-	* Basics of Cloud Computing & AWS
-	* AWS RDS Setup Demo
-	* Connect RDS DB to DBeaver
-	* SQL Basics
-	* Multiplicity
-* [April 27, 2022](https://github.com/FullSol/my-training-notes/blob/master/Lecture_Notes/04.27.2022_Lecture_Notes.md)
+### [April 25, 2022 Lecture Notes](https://github.com/FullSol/my-training-notes/blob/master/Lecture_Notes/Week2/04.25.2022_Lecture_Notes.md)
+
+* Quiz Day
+* No Lecture
+
+### [April 26, 2022 Lecture Notes](https://github.com/FullSol/my-training-notes/blob/master/Lecture_Notes/04.26.2022_Lecture_Notes.md)
+
+* Basics of Cloud Computing & AWS
+* AWS RDS Setup Demo
+* Connect RDS DB to DBeaver
+* SQL Basics
+* Multiplicity
+
+> Multiplicity was talked about on April 27, 2022
+
+### [April 27, 2022](https://github.com/FullSol/my-training-notes/blob/master/Lecture_Notes/04.27.2022_Lecture_Notes.md)
 
 ## Demos
 * [HelloWorld](https://github.com/FullSol/my-training-notes/tree/master/demos/1-Java/HelloWorld)
