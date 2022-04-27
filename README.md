@@ -32,6 +32,7 @@ Here's a list of specific notes (starting with Week 2)
 * [HelloRecursion](https://github.com/FullSol/my-training-notes/tree/master/demos/1-Java/HelloRecursion)
 * [HelloPOJO](https://github.com/FullSol/my-training-notes/tree/master/demos/1-Java/HelloPOJO)
 * [HelloMockitoMaven](https://github.com/FullSol/my-training-notes/tree/master/demos/1-Java/HelloMockitoMaven)
+* [HelloJDBC](https://github.com/FullSol/my-training-notes/tree/master/demos/1-Java/HelloJDBC)
 
 ## Weekly Review Docs
 ### Week 1
