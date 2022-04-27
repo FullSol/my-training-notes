@@ -1,0 +1,97 @@
+2022-04-27 16:11:16 INFO  MainDriver:24 - Starting application, loading welcome screen.
+2022-04-27 16:11:25 INFO  MainDriver:24 - Starting application, loading welcome screen.
+2022-04-27 16:11:43 INFO  MainDriver:24 - Starting application, loading welcome screen.
+2022-04-27 16:12:52 INFO  MainDriver:24 - Starting application, loading welcome screen.
+2022-04-27 16:13:30 INFO  MainDriver:24 - Starting application, loading welcome screen.
+2022-04-27 16:14:24 INFO  MainDriver:24 - Starting application, loading welcome screen.
+2022-04-27 16:17:20 INFO  MainDriver:23 - Starting application, loading welcome screen.
+2022-04-27 16:17:37 INFO  MainDriver:23 - Starting application, loading welcome screen.
+2022-04-27 16:18:52 INFO  MainDriver:23 - Starting application, loading welcome screen.
+2022-04-27 16:19:19 INFO  MainDriver:23 - Starting application, loading welcome screen.
+2022-04-27 16:20:29 INFO  MainDriver:23 - Starting application, loading welcome screen.
+2022-04-27 16:21:10 INFO  MainDriver:23 - Starting application, loading welcome screen.
+2022-04-27 16:22:20 INFO  MainDriver:23 - Starting application, loading welcome screen.
+2022-04-27 16:22:30 WARN  ConnectionUtil:48 - Cannot locate properties file
+java.io.FileNotFoundException: /HelloJDBC/src/main/resources/application.properties (No such file or directory)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:93)
+	at java.io.FileReader.<init>(FileReader.java:58)
+	at com.revature.util.ConnectionUtil.getConnection(ConnectionUtil.java:26)
+	at com.revature.repositories.ProductDAOImpl.insert(ProductDAOImpl.java:29)
+	at com.revature.services.ProductServiceImpl.addNewProduct(ProductServiceImpl.java:18)
+	at com.revature.drivers.MainDriver.welcomeScreen(MainDriver.java:56)
+	at com.revature.drivers.MainDriver.main(MainDriver.java:18)
+2022-04-27 16:22:30 INFO  ProductDAOImpl:31 - In ProductDAO: Making a new product in DB...
+2022-04-27 16:41:55 INFO  MainDriver:23 - Starting application, loading welcome screen.
+2022-04-27 16:42:09 WARN  ConnectionUtil:44 - Unable to obtain connection to database.
+java.sql.SQLException: No suitable driver found for ${db_url}
+	at java.sql.DriverManager.getConnection(DriverManager.java:689)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.revature.util.ConnectionUtil.getConnection(ConnectionUtil.java:27)
+	at com.revature.repositories.ProductDAOImpl.insert(ProductDAOImpl.java:29)
+	at com.revature.services.ProductServiceImpl.addNewProduct(ProductServiceImpl.java:18)
+	at com.revature.drivers.MainDriver.welcomeScreen(MainDriver.java:56)
+	at com.revature.drivers.MainDriver.main(MainDriver.java:18)
+2022-04-27 16:42:09 INFO  ProductDAOImpl:31 - In ProductDAO: Making a new product in DB...
+2022-04-27 16:44:07 INFO  MainDriver:23 - Starting application, loading welcome screen.
+2022-04-27 16:44:22 INFO  ConnectionUtil:27 - ${db_url}
+2022-04-27 16:44:22 WARN  ConnectionUtil:45 - Unable to obtain connection to database.
+java.sql.SQLException: No suitable driver found for ${db_url}
+	at java.sql.DriverManager.getConnection(DriverManager.java:689)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.revature.util.ConnectionUtil.getConnection(ConnectionUtil.java:28)
+	at com.revature.repositories.ProductDAOImpl.insert(ProductDAOImpl.java:29)
+	at com.revature.services.ProductServiceImpl.addNewProduct(ProductServiceImpl.java:18)
+	at com.revature.drivers.MainDriver.welcomeScreen(MainDriver.java:56)
+	at com.revature.drivers.MainDriver.main(MainDriver.java:18)
+2022-04-27 16:44:22 INFO  ProductDAOImpl:31 - In ProductDAO: Making a new product in DB...
+2022-04-27 16:51:48 INFO  MainDriver:23 - Starting application, loading welcome screen.
+2022-04-27 16:52:05 INFO  ConnectionUtil:27 - 
+2022-04-27 16:52:05 WARN  ConnectionUtil:45 - Unable to obtain connection to database.
+java.sql.SQLException: The url cannot be null
+	at java.sql.DriverManager.getConnection(DriverManager.java:649)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.revature.util.ConnectionUtil.getConnection(ConnectionUtil.java:28)
+	at com.revature.repositories.ProductDAOImpl.insert(ProductDAOImpl.java:29)
+	at com.revature.services.ProductServiceImpl.addNewProduct(ProductServiceImpl.java:18)
+	at com.revature.drivers.MainDriver.welcomeScreen(MainDriver.java:56)
+	at com.revature.drivers.MainDriver.main(MainDriver.java:18)
+2022-04-27 16:52:05 INFO  ProductDAOImpl:31 - In ProductDAO: Making a new product in DB...
+2022-04-27 16:52:55 INFO  MainDriver:23 - Starting application, loading welcome screen.
+2022-04-27 16:53:19 INFO  ConnectionUtil:27 - ${db_url}
+2022-04-27 16:53:19 WARN  ConnectionUtil:45 - Unable to obtain connection to database.
+java.sql.SQLException: No suitable driver found for ${db_url}
+	at java.sql.DriverManager.getConnection(DriverManager.java:689)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.revature.util.ConnectionUtil.getConnection(ConnectionUtil.java:28)
+	at com.revature.repositories.ProductDAOImpl.insert(ProductDAOImpl.java:29)
+	at com.revature.services.ProductServiceImpl.addNewProduct(ProductServiceImpl.java:18)
+	at com.revature.drivers.MainDriver.welcomeScreen(MainDriver.java:56)
+	at com.revature.drivers.MainDriver.main(MainDriver.java:18)
+2022-04-27 16:53:19 INFO  ProductDAOImpl:31 - In ProductDAO: Making a new product in DB...
+2022-04-27 16:54:53 INFO  MainDriver:23 - Starting application, loading welcome screen.
+2022-04-27 16:55:05 INFO  ConnectionUtil:27 - ${db_url}
+2022-04-27 16:55:05 WARN  ConnectionUtil:45 - Unable to obtain connection to database.
+java.sql.SQLException: No suitable driver found for ${db_url}
+	at java.sql.DriverManager.getConnection(DriverManager.java:689)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.revature.util.ConnectionUtil.getConnection(ConnectionUtil.java:28)
+	at com.revature.repositories.ProductDAOImpl.insert(ProductDAOImpl.java:29)
+	at com.revature.services.ProductServiceImpl.addNewProduct(ProductServiceImpl.java:18)
+	at com.revature.drivers.MainDriver.welcomeScreen(MainDriver.java:56)
+	at com.revature.drivers.MainDriver.main(MainDriver.java:18)
+2022-04-27 16:55:05 INFO  ProductDAOImpl:31 - In ProductDAO: Making a new product in DB...
+2022-04-27 16:56:23 INFO  MainDriver:23 - Starting application, loading welcome screen.
+2022-04-27 16:56:35 INFO  ConnectionUtil:27 - ${db_url}
+2022-04-27 16:56:35 WARN  ConnectionUtil:45 - Unable to obtain connection to database.
+java.sql.SQLException: No suitable driver found for ${db_url}
+	at java.sql.DriverManager.getConnection(DriverManager.java:689)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.revature.util.ConnectionUtil.getConnection(ConnectionUtil.java:28)
+	at com.revature.repositories.ProductDAOImpl.insert(ProductDAOImpl.java:29)
+	at com.revature.services.ProductServiceImpl.addNewProduct(ProductServiceImpl.java:18)
+	at com.revature.drivers.MainDriver.welcomeScreen(MainDriver.java:56)
+	at com.revature.drivers.MainDriver.main(MainDriver.java:18)
+2022-04-27 16:56:35 INFO  ProductDAOImpl:31 - In ProductDAO: Making a new product in DB...
