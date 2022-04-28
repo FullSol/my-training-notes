@@ -95,3 +95,27 @@ java.sql.SQLException: No suitable driver found for ${db_url}
 	at com.revature.drivers.MainDriver.welcomeScreen(MainDriver.java:56)
 	at com.revature.drivers.MainDriver.main(MainDriver.java:18)
 2022-04-27 16:56:35 INFO  ProductDAOImpl:31 - In ProductDAO: Making a new product in DB...
+2022-04-28 07:46:47 INFO  MainDriver:25 - Starting application, loading welcome screen.
+2022-04-28 07:47:10 INFO  ConnectionUtil:27 - ${db_url}
+2022-04-28 07:47:10 WARN  ConnectionUtil:45 - Unable to obtain connection to database.
+java.sql.SQLException: No suitable driver found for ${db_url}
+	at java.sql.DriverManager.getConnection(DriverManager.java:689)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.revature.util.ConnectionUtil.getConnection(ConnectionUtil.java:28)
+	at com.revature.repositories.ProductDAOImpl.insert(ProductDAOImpl.java:29)
+	at com.revature.services.ProductServiceImpl.addNewProduct(ProductServiceImpl.java:18)
+	at com.revature.drivers.MainDriver.welcomeScreen(MainDriver.java:58)
+	at com.revature.drivers.MainDriver.main(MainDriver.java:19)
+2022-04-28 07:47:10 INFO  ProductDAOImpl:31 - In ProductDAO: Making a new product in DB...
+2022-04-28 07:51:29 INFO  MainDriver:25 - Starting application, loading welcome screen.
+2022-04-28 07:51:42 INFO  ConnectionUtil:27 - ${db_url}
+2022-04-28 07:51:42 WARN  ConnectionUtil:45 - Unable to obtain connection to database.
+java.sql.SQLException: No suitable driver found for ${db_url}
+	at java.sql.DriverManager.getConnection(DriverManager.java:689)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.revature.util.ConnectionUtil.getConnection(ConnectionUtil.java:28)
+	at com.revature.repositories.ProductDAOImpl.insert(ProductDAOImpl.java:29)
+	at com.revature.services.ProductServiceImpl.addNewProduct(ProductServiceImpl.java:18)
+	at com.revature.drivers.MainDriver.welcomeScreen(MainDriver.java:58)
+	at com.revature.drivers.MainDriver.main(MainDriver.java:19)
+2022-04-28 07:51:42 INFO  ProductDAOImpl:31 - In ProductDAO: Making a new product in DB...

@@ -15,14 +15,16 @@ public class MainDriver {
 	private static ProductService productService = new ProductServiceImpl();
 	
 	public static void main(String[] args) {
-		welcomeScreen();
+		Scanner input = new Scanner(System.in);
+		welcomeScreen(input);
+		input.close();
 	}
 	
-	public static void welcomeScreen()
+	public static void welcomeScreen(Scanner input)
 	{
 		logger.info("Starting application, loading welcome screen.");
 		
-		Scanner input = new Scanner(System.in);
+		
 		
 		System.out.println("Welcome to using JDBC Demo!");
 		System.out.println("Select an option from below");
@@ -62,9 +64,9 @@ public class MainDriver {
 			break;
 		default:
 			System.out.println("Invalid option. Try again");
-			welcomeScreen();
+			welcomeScreen(input);
 		}
 		
-		input.close();
+		
 	}
 }

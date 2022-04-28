@@ -13,6 +13,8 @@ import org.apache.log4j.Logger;
 public class ConnectionUtil {
 
 	private static Logger logger = Logger.getLogger(ConnectionUtil.class);
+	
+	private static Environment env;
 
 	public static Connection getConnection() {
 		
@@ -21,7 +23,8 @@ public class ConnectionUtil {
 
 		// Loading in credentials
 		try {
-
+			
+			String db_url = env.getProperty("db_url");
 			// This is more secure as you don't expose your credentials
 			prop.load(new FileReader("/Users/argos/Library/Mobile Documents/com~apple~CloudDocs/_dev/my-training-notes/demos/1-Java/HelloJDBC/src/main/resources/application.properties"));
 			logger.info(prop.getProperty("url"));
