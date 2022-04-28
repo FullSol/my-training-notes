@@ -1,8 +1,5 @@
 package com.revature.util;
 
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -13,10 +10,16 @@ import org.apache.log4j.Logger;
 public class ConnectionUtil {
 
 	private static Logger logger = Logger.getLogger(ConnectionUtil.class);
-	
-	private static Environment env;
 
 	public static Connection getConnection() {
+		
+		/**
+		 * This is a less secure way to establish the DB connection
+		 * String url = "some-where-out-there";
+		 * String username = "something-or-other-you-do-not-know";
+		 * String password = "none-of-your-business";
+		 * conn = DriverManager.getConnection(url, username, password);
+		 */
 		
 		Connection conn = null;
 		Properties prop = new Properties();
@@ -24,36 +27,37 @@ public class ConnectionUtil {
 		// Loading in credentials
 		try {
 			
-			String db_url = env.getProperty("db_url");
 			// This is more secure as you don't expose your credentials
-			prop.load(new FileReader("/Users/argos/Library/Mobile Documents/com~apple~CloudDocs/_dev/my-training-notes/demos/1-Java/HelloJDBC/src/main/resources/application.properties"));
-			logger.info(prop.getProperty("url"));
-			conn = DriverManager.getConnection(
-					prop.getProperty("url"),
-					prop.getProperty("username"),
-					prop.getProperty("password")
+			logger.debug(String.format(
+					"Making a database credentials with following credentials: \nURL: %s \nUsername: %s \nPassword: %s", 
+					System.getenv("db_url"), 
+					System.getenv("db_username"), 
+					System.getenv("db_password")
+				)
 			);
+			conn = DriverManager.getConnection(
+					System.getenv("db_url"), 
+					System.getenv("db_username"), 
+					System.getenv("db_password")
+				);
+//			logger.debug(String.format(
+//					"Making a database credentials with following credentials: \nURL: %s \nUsername: %s \nPassword: %s", 
+//					"jdbc:postgresql://solbikeshop2.chzlwngfvrtn.us-east-1.rds.amazonaws.com:5432/", 
+//					"solbikeshop", 
+//					"detnez-tehqev-5Qadwa"
+//					)
+//			);
+//			conn = DriverManager.getConnection(
+//					"jdbc:postgresql://solbikeshop2.chzlwngfvrtn.us-east-1.rds.amazonaws.com:5432/CycleCity", 
+//					"solbikeshop", 
+//					"detnez-tehqev-5Qadwa"
+//				);
 			
-			/**
-			 * This is a less secure way to establish the DB connection
-			 * String url = "some-where-out-there";
-			 * String username = "something-or-other-you-do-not-know";
-			 * String password = "none-of-your-business";
-			 * conn = DriverManager.getConnection(url, username, password);
-			 */
+			logger.debug("Connection has been successfully established.");
 			
-
 		} catch (SQLException e) {
 
 			logger.warn("Unable to obtain connection to database.", e);
-
-		} catch (FileNotFoundException e) {
-
-			logger.warn("Cannot locate properties file", e);
-
-		} catch (IOException e) {
-
-			e.printStackTrace();
 
 		}
 

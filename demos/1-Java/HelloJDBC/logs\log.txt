@@ -1,121 +1,295 @@
-2022-04-27 16:11:16 INFO  MainDriver:24 - Starting application, loading welcome screen.
-2022-04-27 16:11:25 INFO  MainDriver:24 - Starting application, loading welcome screen.
-2022-04-27 16:11:43 INFO  MainDriver:24 - Starting application, loading welcome screen.
-2022-04-27 16:12:52 INFO  MainDriver:24 - Starting application, loading welcome screen.
-2022-04-27 16:13:30 INFO  MainDriver:24 - Starting application, loading welcome screen.
-2022-04-27 16:14:24 INFO  MainDriver:24 - Starting application, loading welcome screen.
-2022-04-27 16:17:20 INFO  MainDriver:23 - Starting application, loading welcome screen.
-2022-04-27 16:17:37 INFO  MainDriver:23 - Starting application, loading welcome screen.
-2022-04-27 16:18:52 INFO  MainDriver:23 - Starting application, loading welcome screen.
-2022-04-27 16:19:19 INFO  MainDriver:23 - Starting application, loading welcome screen.
-2022-04-27 16:20:29 INFO  MainDriver:23 - Starting application, loading welcome screen.
-2022-04-27 16:21:10 INFO  MainDriver:23 - Starting application, loading welcome screen.
-2022-04-27 16:22:20 INFO  MainDriver:23 - Starting application, loading welcome screen.
-2022-04-27 16:22:30 WARN  ConnectionUtil:48 - Cannot locate properties file
-java.io.FileNotFoundException: /HelloJDBC/src/main/resources/application.properties (No such file or directory)
-	at java.io.FileInputStream.open0(Native Method)
-	at java.io.FileInputStream.open(FileInputStream.java:195)
-	at java.io.FileInputStream.<init>(FileInputStream.java:138)
-	at java.io.FileInputStream.<init>(FileInputStream.java:93)
-	at java.io.FileReader.<init>(FileReader.java:58)
-	at com.revature.util.ConnectionUtil.getConnection(ConnectionUtil.java:26)
-	at com.revature.repositories.ProductDAOImpl.insert(ProductDAOImpl.java:29)
-	at com.revature.services.ProductServiceImpl.addNewProduct(ProductServiceImpl.java:18)
-	at com.revature.drivers.MainDriver.welcomeScreen(MainDriver.java:56)
-	at com.revature.drivers.MainDriver.main(MainDriver.java:18)
-2022-04-27 16:22:30 INFO  ProductDAOImpl:31 - In ProductDAO: Making a new product in DB...
-2022-04-27 16:41:55 INFO  MainDriver:23 - Starting application, loading welcome screen.
-2022-04-27 16:42:09 WARN  ConnectionUtil:44 - Unable to obtain connection to database.
-java.sql.SQLException: No suitable driver found for ${db_url}
-	at java.sql.DriverManager.getConnection(DriverManager.java:689)
-	at java.sql.DriverManager.getConnection(DriverManager.java:247)
-	at com.revature.util.ConnectionUtil.getConnection(ConnectionUtil.java:27)
-	at com.revature.repositories.ProductDAOImpl.insert(ProductDAOImpl.java:29)
-	at com.revature.services.ProductServiceImpl.addNewProduct(ProductServiceImpl.java:18)
-	at com.revature.drivers.MainDriver.welcomeScreen(MainDriver.java:56)
-	at com.revature.drivers.MainDriver.main(MainDriver.java:18)
-2022-04-27 16:42:09 INFO  ProductDAOImpl:31 - In ProductDAO: Making a new product in DB...
-2022-04-27 16:44:07 INFO  MainDriver:23 - Starting application, loading welcome screen.
-2022-04-27 16:44:22 INFO  ConnectionUtil:27 - ${db_url}
-2022-04-27 16:44:22 WARN  ConnectionUtil:45 - Unable to obtain connection to database.
-java.sql.SQLException: No suitable driver found for ${db_url}
-	at java.sql.DriverManager.getConnection(DriverManager.java:689)
-	at java.sql.DriverManager.getConnection(DriverManager.java:247)
-	at com.revature.util.ConnectionUtil.getConnection(ConnectionUtil.java:28)
-	at com.revature.repositories.ProductDAOImpl.insert(ProductDAOImpl.java:29)
-	at com.revature.services.ProductServiceImpl.addNewProduct(ProductServiceImpl.java:18)
-	at com.revature.drivers.MainDriver.welcomeScreen(MainDriver.java:56)
-	at com.revature.drivers.MainDriver.main(MainDriver.java:18)
-2022-04-27 16:44:22 INFO  ProductDAOImpl:31 - In ProductDAO: Making a new product in DB...
-2022-04-27 16:51:48 INFO  MainDriver:23 - Starting application, loading welcome screen.
-2022-04-27 16:52:05 INFO  ConnectionUtil:27 - 
-2022-04-27 16:52:05 WARN  ConnectionUtil:45 - Unable to obtain connection to database.
+2022-04-28 09:42:27 INFO  MainDriver:27 - Starting application, loading welcome screen.
+2022-04-28 09:42:29 INFO  MainDriver:42 - In driver class: User chose option 1 (add new product)...
+2022-04-28 09:42:37 DEBUG ConnectionUtil:31 - Making a database credentials with following credentials: 
+URL: null 
+Username: null 
+Password: null
+2022-04-28 09:42:37 WARN  ConnectionUtil:53 - Unable to obtain connection to database.
 java.sql.SQLException: The url cannot be null
 	at java.sql.DriverManager.getConnection(DriverManager.java:649)
 	at java.sql.DriverManager.getConnection(DriverManager.java:247)
-	at com.revature.util.ConnectionUtil.getConnection(ConnectionUtil.java:28)
+	at com.revature.util.ConnectionUtil.getConnection(ConnectionUtil.java:38)
 	at com.revature.repositories.ProductDAOImpl.insert(ProductDAOImpl.java:29)
 	at com.revature.services.ProductServiceImpl.addNewProduct(ProductServiceImpl.java:18)
-	at com.revature.drivers.MainDriver.welcomeScreen(MainDriver.java:56)
-	at com.revature.drivers.MainDriver.main(MainDriver.java:18)
-2022-04-27 16:52:05 INFO  ProductDAOImpl:31 - In ProductDAO: Making a new product in DB...
-2022-04-27 16:52:55 INFO  MainDriver:23 - Starting application, loading welcome screen.
-2022-04-27 16:53:19 INFO  ConnectionUtil:27 - ${db_url}
-2022-04-27 16:53:19 WARN  ConnectionUtil:45 - Unable to obtain connection to database.
-java.sql.SQLException: No suitable driver found for ${db_url}
+	at com.revature.drivers.MainDriver.welcomeScreen(MainDriver.java:64)
+	at com.revature.drivers.MainDriver.main(MainDriver.java:20)
+2022-04-28 09:42:37 INFO  ProductDAOImpl:31 - In ProductDAO: Making a new product in DB...
+2022-04-28 09:50:32 INFO  MainDriver:27 - Starting application, loading welcome screen.
+2022-04-28 09:50:34 INFO  MainDriver:42 - In driver class: User chose option 1 (add new product)...
+2022-04-28 09:50:39 INFO  MainDriver:27 - Starting application, loading welcome screen.
+2022-04-28 09:50:43 INFO  MainDriver:42 - In driver class: User chose option 1 (add new product)...
+2022-04-28 09:50:50 DEBUG ConnectionUtil:31 - Making a database credentials with following credentials: 
+URL: null 
+Username: null 
+Password: null
+2022-04-28 09:50:50 WARN  ConnectionUtil:53 - Unable to obtain connection to database.
+java.sql.SQLException: The url cannot be null
+	at java.sql.DriverManager.getConnection(DriverManager.java:649)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.revature.util.ConnectionUtil.getConnection(ConnectionUtil.java:38)
+	at com.revature.repositories.ProductDAOImpl.insert(ProductDAOImpl.java:29)
+	at com.revature.services.ProductServiceImpl.addNewProduct(ProductServiceImpl.java:18)
+	at com.revature.drivers.MainDriver.welcomeScreen(MainDriver.java:64)
+	at com.revature.drivers.MainDriver.main(MainDriver.java:20)
+2022-04-28 09:50:50 INFO  ProductDAOImpl:31 - In ProductDAO: Making a new product in DB...
+2022-04-28 09:55:16 INFO  MainDriver:27 - Starting application, loading welcome screen.
+2022-04-28 09:55:18 INFO  MainDriver:42 - In driver class: User chose option 1 (add new product)...
+2022-04-28 09:55:27 DEBUG ConnectionUtil:31 - Making a database credentials with following credentials: 
+URL: null 
+Username: null 
+Password: null
+2022-04-28 09:55:27 WARN  ConnectionUtil:53 - Unable to obtain connection to database.
+java.sql.SQLException: No suitable driver found for jdbc:postgressql://bikeshopdb.chzlwngfvrtn.us-east-1.rds.amazonaws.com:5432
 	at java.sql.DriverManager.getConnection(DriverManager.java:689)
 	at java.sql.DriverManager.getConnection(DriverManager.java:247)
-	at com.revature.util.ConnectionUtil.getConnection(ConnectionUtil.java:28)
+	at com.revature.util.ConnectionUtil.getConnection(ConnectionUtil.java:43)
 	at com.revature.repositories.ProductDAOImpl.insert(ProductDAOImpl.java:29)
 	at com.revature.services.ProductServiceImpl.addNewProduct(ProductServiceImpl.java:18)
-	at com.revature.drivers.MainDriver.welcomeScreen(MainDriver.java:56)
-	at com.revature.drivers.MainDriver.main(MainDriver.java:18)
-2022-04-27 16:53:19 INFO  ProductDAOImpl:31 - In ProductDAO: Making a new product in DB...
-2022-04-27 16:54:53 INFO  MainDriver:23 - Starting application, loading welcome screen.
-2022-04-27 16:55:05 INFO  ConnectionUtil:27 - ${db_url}
-2022-04-27 16:55:05 WARN  ConnectionUtil:45 - Unable to obtain connection to database.
-java.sql.SQLException: No suitable driver found for ${db_url}
+	at com.revature.drivers.MainDriver.welcomeScreen(MainDriver.java:64)
+	at com.revature.drivers.MainDriver.main(MainDriver.java:20)
+2022-04-28 09:55:27 INFO  ProductDAOImpl:31 - In ProductDAO: Making a new product in DB...
+2022-04-28 09:56:55 INFO  MainDriver:27 - Starting application, loading welcome screen.
+2022-04-28 09:57:02 INFO  MainDriver:42 - In driver class: User chose option 1 (add new product)...
+2022-04-28 09:57:10 DEBUG ConnectionUtil:43 - Making a database credentials with following credentials: 
+URL: jdbc:postgresql://bikeshopdb.chzlwngfvrtn.us-east-1.rds.amazonaws.com:5432 
+Username: solbikeshop 
+Password: detnez-tehqev-5Qadwa
+2022-04-28 09:57:10 WARN  ConnectionUtil:60 - Unable to obtain connection to database.
+java.sql.SQLException: No suitable driver found for jdbc:postgresql://bikeshopdb.chzlwngfvrtn.us-east-1.rds.amazonaws.com:5432
 	at java.sql.DriverManager.getConnection(DriverManager.java:689)
 	at java.sql.DriverManager.getConnection(DriverManager.java:247)
-	at com.revature.util.ConnectionUtil.getConnection(ConnectionUtil.java:28)
+	at com.revature.util.ConnectionUtil.getConnection(ConnectionUtil.java:50)
 	at com.revature.repositories.ProductDAOImpl.insert(ProductDAOImpl.java:29)
 	at com.revature.services.ProductServiceImpl.addNewProduct(ProductServiceImpl.java:18)
-	at com.revature.drivers.MainDriver.welcomeScreen(MainDriver.java:56)
-	at com.revature.drivers.MainDriver.main(MainDriver.java:18)
-2022-04-27 16:55:05 INFO  ProductDAOImpl:31 - In ProductDAO: Making a new product in DB...
-2022-04-27 16:56:23 INFO  MainDriver:23 - Starting application, loading welcome screen.
-2022-04-27 16:56:35 INFO  ConnectionUtil:27 - ${db_url}
-2022-04-27 16:56:35 WARN  ConnectionUtil:45 - Unable to obtain connection to database.
-java.sql.SQLException: No suitable driver found for ${db_url}
-	at java.sql.DriverManager.getConnection(DriverManager.java:689)
+	at com.revature.drivers.MainDriver.welcomeScreen(MainDriver.java:64)
+	at com.revature.drivers.MainDriver.main(MainDriver.java:20)
+2022-04-28 09:57:10 INFO  ProductDAOImpl:31 - In ProductDAO: Making a new product in DB...
+2022-04-28 09:57:44 INFO  MainDriver:27 - Starting application, loading welcome screen.
+2022-04-28 09:57:46 INFO  MainDriver:42 - In driver class: User chose option 1 (add new product)...
+2022-04-28 09:57:53 DEBUG ConnectionUtil:43 - Making a database credentials with following credentials: 
+URL: jdbc:postgresql://bikeshopdb.chzlwngfvrtn.us-east-1.rds.amazonaws.com:5432/ 
+Username: solbikeshop 
+Password: detnez-tehqev-5Qadwa
+2022-04-28 09:57:54 WARN  ConnectionUtil:60 - Unable to obtain connection to database.
+org.postgresql.util.PSQLException: FATAL: database "solbikeshop" does not exist
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2532)
+	at org.postgresql.core.v3.QueryExecutorImpl.readStartupMessages(QueryExecutorImpl.java:2644)
+	at org.postgresql.core.v3.QueryExecutorImpl.<init>(QueryExecutorImpl.java:137)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:255)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:217)
+	at org.postgresql.Driver.makeConnection(Driver.java:458)
+	at org.postgresql.Driver.connect(Driver.java:260)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
 	at java.sql.DriverManager.getConnection(DriverManager.java:247)
-	at com.revature.util.ConnectionUtil.getConnection(ConnectionUtil.java:28)
+	at com.revature.util.ConnectionUtil.getConnection(ConnectionUtil.java:50)
 	at com.revature.repositories.ProductDAOImpl.insert(ProductDAOImpl.java:29)
 	at com.revature.services.ProductServiceImpl.addNewProduct(ProductServiceImpl.java:18)
-	at com.revature.drivers.MainDriver.welcomeScreen(MainDriver.java:56)
-	at com.revature.drivers.MainDriver.main(MainDriver.java:18)
-2022-04-27 16:56:35 INFO  ProductDAOImpl:31 - In ProductDAO: Making a new product in DB...
-2022-04-28 07:46:47 INFO  MainDriver:25 - Starting application, loading welcome screen.
-2022-04-28 07:47:10 INFO  ConnectionUtil:27 - ${db_url}
-2022-04-28 07:47:10 WARN  ConnectionUtil:45 - Unable to obtain connection to database.
-java.sql.SQLException: No suitable driver found for ${db_url}
-	at java.sql.DriverManager.getConnection(DriverManager.java:689)
+	at com.revature.drivers.MainDriver.welcomeScreen(MainDriver.java:64)
+	at com.revature.drivers.MainDriver.main(MainDriver.java:20)
+2022-04-28 09:57:54 INFO  ProductDAOImpl:31 - In ProductDAO: Making a new product in DB...
+2022-04-28 09:59:21 INFO  MainDriver:27 - Starting application, loading welcome screen.
+2022-04-28 09:59:22 INFO  MainDriver:42 - In driver class: User chose option 1 (add new product)...
+2022-04-28 09:59:32 DEBUG ConnectionUtil:43 - Making a database credentials with following credentials: 
+URL: jdbc:postgresql://bikeshopdb.chzlwngfvrtn.us-east-1.rds.amazonaws.com:5432// 
+Username: solbikeshop 
+Password: detnez-tehqev-5Qadwa
+2022-04-28 09:59:33 WARN  ConnectionUtil:60 - Unable to obtain connection to database.
+org.postgresql.util.PSQLException: FATAL: database "/" does not exist
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2532)
+	at org.postgresql.core.v3.QueryExecutorImpl.readStartupMessages(QueryExecutorImpl.java:2644)
+	at org.postgresql.core.v3.QueryExecutorImpl.<init>(QueryExecutorImpl.java:137)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:255)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:217)
+	at org.postgresql.Driver.makeConnection(Driver.java:458)
+	at org.postgresql.Driver.connect(Driver.java:260)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
 	at java.sql.DriverManager.getConnection(DriverManager.java:247)
-	at com.revature.util.ConnectionUtil.getConnection(ConnectionUtil.java:28)
+	at com.revature.util.ConnectionUtil.getConnection(ConnectionUtil.java:50)
 	at com.revature.repositories.ProductDAOImpl.insert(ProductDAOImpl.java:29)
 	at com.revature.services.ProductServiceImpl.addNewProduct(ProductServiceImpl.java:18)
-	at com.revature.drivers.MainDriver.welcomeScreen(MainDriver.java:58)
-	at com.revature.drivers.MainDriver.main(MainDriver.java:19)
-2022-04-28 07:47:10 INFO  ProductDAOImpl:31 - In ProductDAO: Making a new product in DB...
-2022-04-28 07:51:29 INFO  MainDriver:25 - Starting application, loading welcome screen.
-2022-04-28 07:51:42 INFO  ConnectionUtil:27 - ${db_url}
-2022-04-28 07:51:42 WARN  ConnectionUtil:45 - Unable to obtain connection to database.
-java.sql.SQLException: No suitable driver found for ${db_url}
-	at java.sql.DriverManager.getConnection(DriverManager.java:689)
+	at com.revature.drivers.MainDriver.welcomeScreen(MainDriver.java:64)
+	at com.revature.drivers.MainDriver.main(MainDriver.java:20)
+2022-04-28 09:59:33 INFO  ProductDAOImpl:31 - In ProductDAO: Making a new product in DB...
+2022-04-28 11:26:13 INFO  MainDriver:27 - Starting application, loading welcome screen.
+2022-04-28 11:26:15 INFO  MainDriver:42 - In driver class: User chose option 1 (add new product)...
+2022-04-28 11:26:26 DEBUG ConnectionUtil:43 - Making a database credentials with following credentials: 
+URL: jdbc:postgresql://solbikeshop2.chzlwngfvrtn.us-east-1.rds.amazonaws.com:5432/ 
+Username: solbikeshop 
+Password: detnez-tehqev-5Qadwa
+2022-04-28 11:26:27 WARN  ConnectionUtil:60 - Unable to obtain connection to database.
+org.postgresql.util.PSQLException: FATAL: database "solbikeshop" does not exist
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2532)
+	at org.postgresql.core.v3.QueryExecutorImpl.readStartupMessages(QueryExecutorImpl.java:2644)
+	at org.postgresql.core.v3.QueryExecutorImpl.<init>(QueryExecutorImpl.java:137)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:255)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:217)
+	at org.postgresql.Driver.makeConnection(Driver.java:458)
+	at org.postgresql.Driver.connect(Driver.java:260)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
 	at java.sql.DriverManager.getConnection(DriverManager.java:247)
-	at com.revature.util.ConnectionUtil.getConnection(ConnectionUtil.java:28)
+	at com.revature.util.ConnectionUtil.getConnection(ConnectionUtil.java:50)
 	at com.revature.repositories.ProductDAOImpl.insert(ProductDAOImpl.java:29)
 	at com.revature.services.ProductServiceImpl.addNewProduct(ProductServiceImpl.java:18)
-	at com.revature.drivers.MainDriver.welcomeScreen(MainDriver.java:58)
-	at com.revature.drivers.MainDriver.main(MainDriver.java:19)
-2022-04-28 07:51:42 INFO  ProductDAOImpl:31 - In ProductDAO: Making a new product in DB...
+	at com.revature.drivers.MainDriver.welcomeScreen(MainDriver.java:64)
+	at com.revature.drivers.MainDriver.main(MainDriver.java:20)
+2022-04-28 11:26:27 INFO  ProductDAOImpl:31 - In ProductDAO: Making a new product in DB...
+2022-04-28 11:26:47 INFO  MainDriver:27 - Starting application, loading welcome screen.
+2022-04-28 11:26:49 INFO  MainDriver:42 - In driver class: User chose option 1 (add new product)...
+2022-04-28 11:26:57 DEBUG ConnectionUtil:43 - Making a database credentials with following credentials: 
+URL: jdbc:postgresql://solbikeshop2.chzlwngfvrtn.us-east-1.rds.amazonaws.com:5432/ 
+Username: solbikeshop 
+Password: detnez-tehqev-5Qadwa
+2022-04-28 11:26:57 WARN  ConnectionUtil:60 - Unable to obtain connection to database.
+org.postgresql.util.PSQLException: FATAL: password authentication failed for user "solbikeshop2"
+	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:525)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:146)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:197)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:217)
+	at org.postgresql.Driver.makeConnection(Driver.java:458)
+	at org.postgresql.Driver.connect(Driver.java:260)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.revature.util.ConnectionUtil.getConnection(ConnectionUtil.java:50)
+	at com.revature.repositories.ProductDAOImpl.insert(ProductDAOImpl.java:29)
+	at com.revature.services.ProductServiceImpl.addNewProduct(ProductServiceImpl.java:18)
+	at com.revature.drivers.MainDriver.welcomeScreen(MainDriver.java:64)
+	at com.revature.drivers.MainDriver.main(MainDriver.java:20)
+2022-04-28 11:26:57 INFO  ProductDAOImpl:31 - In ProductDAO: Making a new product in DB...
+2022-04-28 11:27:49 INFO  MainDriver:27 - Starting application, loading welcome screen.
+2022-04-28 11:27:51 INFO  MainDriver:42 - In driver class: User chose option 1 (add new product)...
+2022-04-28 11:30:52 DEBUG ConnectionUtil:43 - Making a database credentials with following credentials: 
+URL: jdbc:postgresql://solbikeshop2.chzlwngfvrtn.us-east-1.rds.amazonaws.com:5432/ 
+Username: solbikeshop 
+Password: detnez-tehqev-5Qadwa
+2022-04-28 11:30:52 WARN  ConnectionUtil:60 - Unable to obtain connection to database.
+org.postgresql.util.PSQLException: FATAL: database "solbikeshop2/" does not exist
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2532)
+	at org.postgresql.core.v3.QueryExecutorImpl.readStartupMessages(QueryExecutorImpl.java:2644)
+	at org.postgresql.core.v3.QueryExecutorImpl.<init>(QueryExecutorImpl.java:137)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:255)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:217)
+	at org.postgresql.Driver.makeConnection(Driver.java:458)
+	at org.postgresql.Driver.connect(Driver.java:260)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.revature.util.ConnectionUtil.getConnection(ConnectionUtil.java:50)
+	at com.revature.repositories.ProductDAOImpl.insert(ProductDAOImpl.java:29)
+	at com.revature.services.ProductServiceImpl.addNewProduct(ProductServiceImpl.java:18)
+	at com.revature.drivers.MainDriver.welcomeScreen(MainDriver.java:64)
+	at com.revature.drivers.MainDriver.main(MainDriver.java:20)
+2022-04-28 11:30:52 INFO  ProductDAOImpl:31 - In ProductDAO: Making a new product in DB...
+2022-04-28 11:31:11 INFO  MainDriver:27 - Starting application, loading welcome screen.
+2022-04-28 11:31:12 INFO  MainDriver:42 - In driver class: User chose option 1 (add new product)...
+2022-04-28 11:31:35 DEBUG ConnectionUtil:43 - Making a database credentials with following credentials: 
+URL: jdbc:postgresql://solbikeshop2.chzlwngfvrtn.us-east-1.rds.amazonaws.com:5432/ 
+Username: solbikeshop 
+Password: detnez-tehqev-5Qadwa
+2022-04-28 11:31:35 WARN  ConnectionUtil:60 - Unable to obtain connection to database.
+org.postgresql.util.PSQLException: FATAL: database "solbikeshop2" does not exist
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2532)
+	at org.postgresql.core.v3.QueryExecutorImpl.readStartupMessages(QueryExecutorImpl.java:2644)
+	at org.postgresql.core.v3.QueryExecutorImpl.<init>(QueryExecutorImpl.java:137)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:255)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:217)
+	at org.postgresql.Driver.makeConnection(Driver.java:458)
+	at org.postgresql.Driver.connect(Driver.java:260)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.revature.util.ConnectionUtil.getConnection(ConnectionUtil.java:50)
+	at com.revature.repositories.ProductDAOImpl.insert(ProductDAOImpl.java:29)
+	at com.revature.services.ProductServiceImpl.addNewProduct(ProductServiceImpl.java:18)
+	at com.revature.drivers.MainDriver.welcomeScreen(MainDriver.java:64)
+	at com.revature.drivers.MainDriver.main(MainDriver.java:20)
+2022-04-28 11:31:35 INFO  ProductDAOImpl:31 - In ProductDAO: Making a new product in DB...
+2022-04-28 11:34:05 INFO  MainDriver:27 - Starting application, loading welcome screen.
+2022-04-28 11:34:08 INFO  MainDriver:42 - In driver class: User chose option 1 (add new product)...
+2022-04-28 11:34:18 DEBUG ConnectionUtil:43 - Making a database credentials with following credentials: 
+URL: jdbc:postgresql://solbikeshop2.chzlwngfvrtn.us-east-1.rds.amazonaws.com:5432/ 
+Username: solbikeshop 
+Password: detnez-tehqev-5Qadwa
+2022-04-28 11:34:18 DEBUG ConnectionUtil:56 - Connection has been successfully established.
+2022-04-28 11:34:18 INFO  ProductDAOImpl:31 - In ProductDAO: Making a new product in DB...
+2022-04-28 11:34:18 WARN  ProductDAOImpl:53 - Unable to execute SQL statement
+org.postgresql.util.PSQLException: ERROR: relation "products" does not exist
+  Position: 13
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2532)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2267)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:312)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:448)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:369)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:153)
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:119)
+	at com.revature.repositories.ProductDAOImpl.insert(ProductDAOImpl.java:48)
+	at com.revature.services.ProductServiceImpl.addNewProduct(ProductServiceImpl.java:18)
+	at com.revature.drivers.MainDriver.welcomeScreen(MainDriver.java:64)
+	at com.revature.drivers.MainDriver.main(MainDriver.java:20)
+2022-04-28 11:34:18 INFO  MainDriver:67 - In driver class: User chose option 2 (get product by id)...
+2022-04-28 11:34:21 INFO  ProductServiceImpl:29 - In service layer - getting product by id 1...
+2022-04-28 12:03:07 INFO  MainDriver:27 - Starting application, loading welcome screen.
+2022-04-28 12:03:08 INFO  MainDriver:42 - In driver class: User chose option 1 (add new product)...
+2022-04-28 12:03:18 DEBUG ConnectionUtil:31 - Making a database credentials with following credentials: 
+URL: null 
+Username: null 
+Password: null
+2022-04-28 12:03:18 WARN  ConnectionUtil:60 - Unable to obtain connection to database.
+java.sql.SQLException: The url cannot be null
+	at java.sql.DriverManager.getConnection(DriverManager.java:649)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.revature.util.ConnectionUtil.getConnection(ConnectionUtil.java:38)
+	at com.revature.repositories.ProductDAOImpl.insert(ProductDAOImpl.java:29)
+	at com.revature.services.ProductServiceImpl.addNewProduct(ProductServiceImpl.java:18)
+	at com.revature.drivers.MainDriver.welcomeScreen(MainDriver.java:64)
+	at com.revature.drivers.MainDriver.main(MainDriver.java:20)
+2022-04-28 12:03:18 INFO  ProductDAOImpl:31 - In ProductDAO: Making a new product in DB...
+2022-04-28 12:07:10 INFO  MainDriver:27 - Starting application, loading welcome screen.
+2022-04-28 12:07:12 INFO  MainDriver:42 - In driver class: User chose option 1 (add new product)...
+2022-04-28 12:07:19 DEBUG ConnectionUtil:31 - Making a database credentials with following credentials: 
+URL: jdbc:postgresql://solbikeshop2.chzlwngfvrtn.us-east-1.rds.amazonaws.com:5432/CycleCity 
+Username: solbikeshop 
+Password: detnez-tehqev-5Qadwa
+2022-04-28 12:07:20 DEBUG ConnectionUtil:56 - Connection has been successfully established.
+2022-04-28 12:07:20 INFO  ProductDAOImpl:31 - In ProductDAO: Making a new product in DB...
+2022-04-28 12:07:20 WARN  ProductDAOImpl:53 - Unable to execute SQL statement
+org.postgresql.util.PSQLException: ERROR: relation "products" does not exist
+  Position: 13
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2532)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2267)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:312)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:448)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:369)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:153)
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:119)
+	at com.revature.repositories.ProductDAOImpl.insert(ProductDAOImpl.java:48)
+	at com.revature.services.ProductServiceImpl.addNewProduct(ProductServiceImpl.java:18)
+	at com.revature.drivers.MainDriver.welcomeScreen(MainDriver.java:64)
+	at com.revature.drivers.MainDriver.main(MainDriver.java:20)
+2022-04-28 12:07:20 INFO  MainDriver:67 - In driver class: User chose option 2 (get product by id)...
+2022-04-28 12:07:58 INFO  MainDriver:27 - Starting application, loading welcome screen.
+2022-04-28 12:08:00 INFO  MainDriver:42 - In driver class: User chose option 1 (add new product)...
+2022-04-28 12:08:08 DEBUG ConnectionUtil:31 - Making a database credentials with following credentials: 
+URL: jdbc:postgresql://solbikeshop2.chzlwngfvrtn.us-east-1.rds.amazonaws.com:5432/CycleCity 
+Username: solbikeshop 
+Password: detnez-tehqev-5Qadwa
+2022-04-28 12:08:09 DEBUG ConnectionUtil:56 - Connection has been successfully established.
+2022-04-28 12:08:09 INFO  ProductDAOImpl:31 - In ProductDAO: Making a new product in DB...
+2022-04-28 12:08:09 WARN  ProductDAOImpl:53 - Unable to execute SQL statement
+org.postgresql.util.PSQLException: ERROR: relation "products" does not exist
+  Position: 13
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2532)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2267)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:312)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:448)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:369)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:153)
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:119)
+	at com.revature.repositories.ProductDAOImpl.insert(ProductDAOImpl.java:48)
+	at com.revature.services.ProductServiceImpl.addNewProduct(ProductServiceImpl.java:18)
+	at com.revature.drivers.MainDriver.welcomeScreen(MainDriver.java:64)
+	at com.revature.drivers.MainDriver.main(MainDriver.java:20)
+2022-04-28 12:08:09 INFO  MainDriver:67 - In driver class: User chose option 2 (get product by id)...

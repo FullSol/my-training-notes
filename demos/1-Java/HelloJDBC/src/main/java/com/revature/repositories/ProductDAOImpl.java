@@ -37,7 +37,7 @@ public class ProductDAOImpl implements ProductDAO {
 			 * We used (?)s as place-holders which we can insert values from Java using prepared statements
 			 * We do this to avoid "SQL Injection" (security concept as which end-users can put in malicious data using your own code)
 			 */ 
-			String sql = "INSERT INTO products (name, price, expiration_date) VALUES (?, ?, ?)";
+			String sql = "insert into products (name, price, expiration_date) values (?, ?, ?)";
 			
 			PreparedStatement stmt = conn.prepareStatement(sql);
 			stmt.setString(1, product.getProductName());

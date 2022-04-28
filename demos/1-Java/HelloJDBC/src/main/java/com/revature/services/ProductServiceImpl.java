@@ -20,20 +20,20 @@ public class ProductServiceImpl implements ProductService {
 
 	@Override
 	public boolean editProduct(Product product) {
-		// TODO Auto-generated method stub
-		return false;
+		logger.info("In service layer - editing existing product...");
+		return productDAO.update(product);
 	}
 
 	@Override
 	public Product getProductById(int id) {
-		// TODO Auto-generated method stub
-		return null;
+		logger.info("In service layer - getting product by id " + id + "...");
+		return productDAO.findById(id);
 	}
 
 	@Override
 	public List<Product> getAllProducts() {
-		// TODO Auto-generated method stub
-		return null;
+		logger.info("In service layer - retrieving all products...");
+		return productDAO.findAll();
 	}
 
 }
