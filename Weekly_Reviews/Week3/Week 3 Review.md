@@ -599,8 +599,21 @@ The difference? In this case almost 10 lines of code.
 [Geeks-for-Geeks: DIfference Between Streams and Collections in Java](https://www.geeksforgeeks.org/difference-between-streams-and-collections-in-java/)
 
 ### Terminal Stream Operations
+A terminal stream operation is an operation that starts the internal iteration of the elements, calls all the listeners, and returns a result.
+
+[Jenkov Tech & Media Labs: Java Stream API -> Terminal and Non-Terminal Operations](https://jenkov.com/tutorials/java-functional-programming/streams.html)
 
 ### Intermediate Stream Operations
+Intermediate operators do not execute until a terminal operation is invoked, i.e. they are not executed until a result of processing is actually needed.
+
+Important and most frequently used: 
+
+1. filter(predicate) Method 
+2. sorted() Method 
+3. distinct() Method 
+4. map() Method
+
+[Geeks-for-Geeks: Intermediate Methods of Stream in Java](https://www.geeksforgeeks.org/intermediate-methods-of-stream-in-java/)
 
 ### Stream Reduction
 
@@ -608,7 +621,48 @@ The difference? In this case almost 10 lines of code.
 [Geeks-for-Geeks](https://www.geeksforgeeks.org/java-8-optional-class/)
 ### Stream Collection Operations
 
+Reduction stream operations allow us to produce one single result from a sequence of elements, by repeatedly applying a combining operation to the elements in the sequence.
+
+> Tutorial
+
+Using Stream.reduce()
+
+To better understand the functionality of the identity, accumulator and combiner elements, let's look at some basic examples:
+
+```
+List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5, 6);
+int result = numbers
+  .stream()
+  .reduce(0, (subtotal, element) -> subtotal + element);
+assertThat(result).isEqualTo(21);
+```
+
+In this case, the Integer value 0 is the identity. It stores the initial value of the reduction operation and also the default result when the stream of Integer values is empty.
+
+Likewise, the lambda expression:
+
+```
+subtotal, element -> subtotal + element
+```
+
+is the accumulator since it takes the partial sum of Integer values and the next element in the stream.
+
+To make the code even more concise, we can use a method reference instead of a lambda expression:
+
+```
+int result = numbers.stream().reduce(0, Integer::sum);
+assertThat(result).isEqualTo(21);
+```
+Of course, we can use a reduce() operation on streams holding other types of elements.
+
+There is more at the link:
+[Baeldung: Guide to Stream.reduce()]()
+
 ### Composing Comparators
+
+Another Demo required response...
+[Baeldung: Comparator and Comparable in Java](https://www.baeldung.com/java-comparator-comparable)
+[Training repo](https://github.com/220418-UTA-SH-Java-Enterprise/training-repo/tree/main/demos/3%20-%20Java%20SE%20API/HelloComparableComparator)
 
 ### java.util.function Package
 
@@ -782,6 +836,22 @@ starts at the tree root and explores all nodes at the present depth prior to mov
 
 ## Unix/Linux
 ### Using Curl to Hit Web Endpoints
+
+This is really just a list of commands. They need to be edited for YOURSPECIFIC APP, but otherwise fairly simple
+
+
+
+```
+curl -v http://www.example.com/
+```
+
+Some Vocab:
+**GET** - HTTP Protocol to send a get request to a server. The request data is appended to the URL
+**POST** - HTTP Protocol to send a post requiest. This is how forms normally should be sent. Unlike the GET request the informaiton will not be appended to the URL 
+**PUT** - mainly used for updating existing requests, but will also create a new one if one does not exist.
+**DELETE** - I think you can guess this one =)
+
+[Test a REST API with curl](https://www.baeldung.com/curl-rest)
 
 ## Tooling
 ### Postman
