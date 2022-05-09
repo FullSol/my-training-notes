@@ -137,6 +137,16 @@ public class Singleton{
 
 [Video explaining all of the above](https://www.youtube.com/watch?v=NZaXM67fxbs)
 
+### Executor Service Design Pattern
+
+
+
+### Runnable Pattern vs. Executor Service Pattern 
+
+
+### Executor Interface
+
+
 ### Core Collections
 The Collection framework represents a unified architecture for storing and manipulating a group of objects.
 ![Collections Chart](images/java-collection-hierarchy.png)
@@ -153,7 +163,24 @@ In Java, an Iterator is one of the Java cursors. Java Iterator is an interface t
 
 ### Making custom data structures (??)
 
-### For-each-loops (??)
+### For-each-loops
+Another array traversing technique like the for-loop, while-loop, do-while loop. It is commonly used to iterate over an array or a Collections class (e.g. ArrayList). 
+
+Syntax for for-each loop: 
+```
+for (type var : array) { 
+    statements using var;
+    } 
+```
+Is equivalent to: 
+```
+for (int i=0; i<arr.length; i++) { 
+    type var = arr[i];
+    statements using var;
+}
+```
+[Geeks for Geeks - For_Each Loop] (https://www.geeksforgeeks.org/for-each-loop-in-java/)
+
 
 ### ArrayList Class
 Java ArrayList class uses a dynamic array for storing the elements. It is like an array, but there is no size limit. We can add or remove elements anytime. So, it is much more flexible than the traditional array. It is found in the java.util package. It is like the Vector in C++.
@@ -676,6 +703,148 @@ Another Demo required response...
 
 ### Primitive Specializations of Functional Interfaces
 
+### Package java.time 
+The main API for dates, times, instants, and durations.
+
+Classes defined here represent the principle date-time concepts, including instants, durations, dates, times, time-zones and periods. 
+    <ul> - All the classes are immutable and thread-safe. </ul>
+
+
+Some classes...
+- **LocalDate**: A date without a time, or any reference to an offset or timezone (ex: 2007-12-03)
+- **LocalTime**: A time without a date, or any reference to an offset or timezone (ex: 10:15:30)
+- **LocalDateTime**: Combines date and time, but still without any offset or timezone (ex:  2007 - 12 - 03T10: 15:30)
+
+[Package java.time](https://docs.oracle.com/javase/8/docs/api/java/time/package-summary.html#package.description)
+
+
+### Parsing & Formatting Dates 
+
+
+### Multithreading 
+
+
+### Creating and Executing Threads 
+
+
+### Identifying a Lock Object 
+
+
+### Suspending a thread with .wait()
+
+
+### Stopping a thread using .interrupt()
+
+
+
+### Reflection API 
+The Reflections API is used to examine or modify the behavior of classes/methods/interfaes at runtime. It comes from the java.lang.reflect package. 
+![Reflections API](https://media.geeksforgeeks.org/wp-content/cdn-uploads/reflection.png)
+![Java.lang.reflect](https://media.geeksforgeeks.org/wp-content/uploads/20220110121120/javalang-768x384.jpg)
+
+Reflection gives us info about the class to which an object belongs and also the methods of that class that can be executed by using the object. Through reflection, we can invoke methods at runtime irrespective of the access specifier used with them.
+
+**Class** - the universal type for the meta information that describes objects within the Java system. Class loaders in the Java system return objects of type Class. 
+
+**Constructors**
+
+**Methods**
+
+[Geek for Geeks: Reflections API](https://www.geeksforgeeks.org/reflection-in-java/)
+
+
+### Retrieving Class Objects (Relections)
+**Class** - the universal type for the meta information that describes objects within the Java system. Class loaders in the Java system return objects of type Class. 
+
+### Discovering Class Members (Reflections)
+
+
+### Examining Class modifiers and types (Reflections)
+
+
+### Obtaining field types 
+
+
+### Retrieving and parsing field modifiers 
+
+
+### Getting and setting field values 
+
+
+### Obtaining names of method parameters 
+
+
+### Retrieving and parsing method modifiers 
+
+
+### Invoking methods (Reflections)
+We can invoke a method through reflection if we know its name and parameter types. We use two methods for this purpose as described below before moving ahead as follows:
+1. `getDeclaredMethod()` creates an object of the method to be invoked 
+```
+    Class.getDeclaredMethod(name, parametertype)
+```
+    name = Name of a method whose object is to be created
+    parametertype = An array of Class objects
+2. `invoke()` invokes a method of the class at runtime
+```
+    Method.invoke(Object, parameter)
+```
+[Geek for Geeks: Reflections API](https://www.geeksforgeeks.org/reflection-in-java/)
+
+
+### Finding constructors 
+
+
+### Retrieving and parsing constructor modifiers 
+
+
+### Creating new class instances 
+
+
+### Identifying array types 
+
+
+### Examining enums 
+- Enums restrict a variable to have one of only a few predefined values. The values in this enumerated list are called **enums**.
+- Possible to reduce the number of bugs in your code by using enums. 
+- Enums can be declared as their own or inside a class. Methods, variables, constructors can be defined inside enums as well.
+- Ex: Consider an application for a fresh juice shop
+→ can restrict the glass size to small, medium and large → makes it so that it won’t allow anyone to order any size other than small, medium, or large 
+
+
+Code example: 
+```
+class FreshJuice {
+
+   enum FreshJuiceSize{ SMALL, MEDIUM, LARGE }
+   FreshJuiceSize size;
+}
+
+public class FreshJuiceTest {
+
+   public static void main(String args[]){
+      FreshJuice juice = new FreshJuice();
+      juice.size = FreshJuice.FreshJuiceSize.MEDIUM ;
+      System.out.println("Size: " + juice.size);
+   }
+}
+```
+Output: 
+```
+Size: MEDIUM
+```
+
+
+### Creating JDK Proxy Objects (?)
+
+### DIY Testing Framework (?) 
+
+
+
+
+
+
+<hr>
 ## Data Structures & Algorithms
 
 ### Greedy Algorithms
@@ -834,6 +1003,8 @@ starts at the tree root and explores all nodes at the present depth prior to mov
 [Breadth First Search or BFS for a Graph](https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/?ref=gcse)
 [Breadth-First Search](https://en.wikipedia.org/wiki/Breadth-first_search)
 
+
+<hr>
 ## Unix/Linux
 ### Using Curl to Hit Web Endpoints
 
@@ -853,8 +1024,40 @@ Some Vocab:
 
 [Test a REST API with curl](https://www.baeldung.com/curl-rest)
 
+
+### Relative and Absolute Paths 
+
+<hr>
+
+## OOP
+### Object Relational Mapping
+
+<hr>
+
+## Multithreading 
+### Concurrency 
+
+
+### Parallelism 
+
+### Asynchrony 
+
+### Synchronized Resources 
+
+### Locks and Keys 
+
+### Thread Pooling 
+
+
+<hr> 
+
 ## Tooling
 ### Postman
 
+<hr>
+
 ## Testing
+### Coverage Reports 
+### JaCoCo
+### API Testing Tools 
 ### Leveraging an in-memory DB for testing (??)
