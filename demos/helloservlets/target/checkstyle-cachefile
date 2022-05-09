@@ -1,0 +1,5 @@
+#Mon May 09 12:53:17 EDT 2022
+configuration*?=6583AAABDECC5804FCD08140C89211C7C448101F
+module-resource*?\:checkstyle/suppressions.xml=2897CB0425A0DA85793F19A89D7DCD3FB954A04C
+/Users/argos/_dev/my-training-notes/demos/helloservlets/src/main/java/com/revature/App.java=1652115124458
+/Users/argos/_dev/my-training-notes/demos/helloservlets/src/test/java/com/revature/AppTest.java=1652115124461
