@@ -1,10 +1,17 @@
 # Week 4 Review 
 
+*Updated to W4, Day 3
+
 >**Levi**: 
->- [ ] All of Day 1 & Day 2 Java 
->
+>- [ ] Day 1 Java 
+>- [ ] Day 2 Java 
+>- [ ] HTTP
+>- [ ] Servlets
+
 >**Calvin**: 
 >- [ ] All of Web, Tooling, and App Design
+>- [ ] Servlets
+>- [ ] Controllers
 
 ## Java
 
@@ -186,6 +193,23 @@ Source: [A Guide to the Front Controller Pattern  in  Java](https://www.baeldung
 ----------------------------------------------------------------
 ## Cloud Computing 
 
+### AWS Elastic Compute Cloud 
+
+### Connecting to an EC2 instance
+
+
+### Manually deploying an application an EC2
+
+### AWS EC2 Autoscaling 
+
+### Horizontal v. Veritcal Scaling 
+
+### AWS Elastic Beanstalk 
+
+### Manually deploying an application to Elastic Beanstalk 
+
+### AWS Simple Storage Service 
+
 ----------------------------------------------------------------
 ## DevOps 
 
@@ -193,6 +217,7 @@ Source: [A Guide to the Front Controller Pattern  in  Java](https://www.baeldung
 ----------------------------------------------------------------
 ## Unix/Linux 
 
+### SSH
 
 
 --------------------------------
@@ -211,6 +236,8 @@ Source: [A Guide to the Front Controller Pattern  in  Java](https://www.baeldung
 
 --------------------------------
 ## AWS 
+
+### (Optional) Static Web Hosting with S3
 
 -------------------------------- 
 ## SDLC 
