@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hello Servlets</title>
+</head>
+<body>
+    <h1>HelloServlets application is running!</h1>
+</body>
+</html>
+2:26
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+             http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+    <display-name>Hello, Servlets!</display-name>
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+    </welcome-file-list>
+    <context-param>
+        <param-name>contextParam</param-name>
+        <param-value>contextValue</param-value>
+    </context-param>
+    <servlet>
+        <servlet-name>TestServlet</servlet-name>
+        <servlet-class>com.revature.servlets.TestServlet</servlet-class>
+        <init-param>
+            <param-name>someParam</param-name>
+            <param-value>see?</param-value>
+        </init-param>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>TestServlet</servlet-name>
+        <url-pattern>/test</url-pattern>
+    </servlet-mapping>
+</web-app>
