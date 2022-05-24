@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Intro to JavaScript</title>
+  </head>
+  <body>
+    <h1 class="my-title">Welcome User</h1>
+    <h2 id="test">Test</h2>
+    <!-- Internal JS with <script> tag-->
+    <script>
+      var title = document.getElementsByClassName('my-title');
+      console.log(title);
+      title[0].innerHTML = "Hi, I'm Bob";
+
+      var target = document.getElementById('test');
+      target.innerHTML = "I'm Cowboy Bob!";
+    </script>
+    <!-- External JS with <script src="file-location.js"> tag-->
+    <script src="/js/main.js"
+  </body>
+</html>
